@@ -5,630 +5,330 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Pearl Care Training Academy: UK care training LMS. 79 lessons, 8 programmes, AI avatar video, Claude AI Coach, and CQC compliance tools for care professionals." />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0D2052" />
   <title>Pearl Care Training Academy | Care Training for Professionals</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pearl Care Training Academy" />
+  <meta property="og:description" content="UK-leading care training. 79 lessons, AI avatar video, Claude AI Coach, and CQC compliance tools." />
+  <meta property="og:site_name" content="Pearl Care Training Academy" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 88'%3E%3Crect width='80' height='88' rx='16' fill='%230D2052'/%3E%3Cellipse cx='40' cy='44' rx='30' ry='34' fill='none' stroke='%23C4912B' stroke-width='2'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+    /* ── Pearl Care Premium Design System v3 ── */
     :root {
-      --teal: #127890;
-      --teal-light: #1a9bb8;
-      --teal-dark: #0d5c6e;
-      --teal-pale: #e8f4f7;
-      --navy: #1C3461;
-      --navy-light: #253f78;
-      --navy-dark: #131f3a;
-      --white: #ffffff;
-      --off-white: #f8fafc;
-      --grey-50: #f1f5f9;
-      --grey-100: #e2e8f0;
-      --grey-200: #cbd5e1;
-      --grey-400: #94a3b8;
-      --grey-600: #475569;
-      --grey-800: #1e293b;
-      --radius: 12px;
-      --radius-lg: 20px;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
-      --shadow: 0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
-      --shadow-lg: 0 10px 40px rgba(0,0,0,0.12), 0 4px 16px rgba(0,0,0,0.06);
-      --shadow-xl: 0 20px 60px rgba(0,0,0,0.15), 0 8px 24px rgba(0,0,0,0.08);
+      --navy:         #0D2052;
+      --navy-mid:     #1A3470;
+      --navy-light:   #2A4A8E;
+      --gold:         #C4912B;
+      --gold-bright:  #E0A830;
+      --gold-dim:     #F5E6C4;
+      --teal:         #0B7BB5;
+      --teal-light:   #E0F2FE;
+      --surface:      #FFFFFF;
+      --surface-2:    #F7FAFF;
+      --bg:           #F0F4FB;
+      --border:       #E1E8F5;
+      --border-strong:#C8D5EE;
+      --text:         #0D1B3E;
+      --text-2:       #3D4F6E;
+      --muted:        #6B7FA8;
+      --success:      #059669;
+      --success-bg:   #ECFDF5;
+      --radius:       12px;
+      --radius-lg:    18px;
+      --radius-sm:    8px;
+      --shadow-xs:    0 1px 3px rgba(13,32,82,.06);
+      --shadow-sm:    0 2px 8px rgba(13,32,82,.08), 0 1px 2px rgba(13,32,82,.04);
+      --shadow:       0 4px 16px rgba(13,32,82,.10), 0 2px 4px rgba(13,32,82,.06);
+      --shadow-lg:    0 8px 32px rgba(13,32,82,.14), 0 2px 8px rgba(13,32,82,.06);
+      --shadow-xl:    0 20px 48px rgba(13,32,82,.18), 0 4px 12px rgba(13,32,82,.08);
+      --nav-bg:       linear-gradient(175deg, #0A1A45 0%, #0D2052 40%, #0F2460 100%);
     }
-
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--grey-800);
-      background: var(--white);
-      line-height: 1.6;
+      color: var(--text); background: var(--bg); line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
+    h1, h2, h3, .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 700; color: var(--navy); letter-spacing: -.5px; line-height: 1.1; }
+    h2 { font-size: clamp(26px, 3.5vw, 38px); font-weight: 700; color: var(--navy); letter-spacing: -.3px; line-height: 1.2; }
+    h3 { font-size: 20px; font-weight: 700; color: var(--navy); font-family: 'Cormorant Garamond', serif; }
+    p { color: var(--text-2); line-height: 1.7; }
+    a { text-decoration: none; }
 
-    /* ── UTILITIES ── */
-    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
     .section { padding: 96px 0; }
-    .section-sm { padding: 64px 0; }
+
+    /* Section tag */
     .section-tag {
       display: inline-flex; align-items: center; gap: 8px;
-      background: var(--teal-pale); color: var(--teal-dark);
-      font-size: 13px; font-weight: 600; letter-spacing: 0.05em;
-      text-transform: uppercase; padding: 6px 14px; border-radius: 100px;
-      margin-bottom: 16px;
+      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em;
+      color: var(--gold); padding: 6px 14px; border-radius: 100px;
+      background: var(--gold-dim); margin-bottom: 16px; font-family: 'Inter', sans-serif;
     }
-    .section-tag::before {
-      content: ''; display: block; width: 6px; height: 6px;
-      background: var(--teal); border-radius: 50%;
-    }
-    h2.section-title {
-      font-size: clamp(28px, 4vw, 42px); font-weight: 800;
-      color: var(--navy); line-height: 1.15; margin-bottom: 16px;
-    }
-    p.section-sub {
-      font-size: 18px; color: var(--grey-600); max-width: 600px; line-height: 1.7;
-    }
+    .section-title { margin-bottom: 14px; }
+    .section-sub { font-size: 17px; color: var(--text-2); max-width: 600px; line-height: 1.7; }
+    .section-header { margin-bottom: 56px; }
+    .section-header.centered { text-align: center; }
+    .section-header.centered .section-sub { margin: 0 auto; }
+
+    /* Buttons */
     .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-      font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600;
-      border: none; cursor: pointer; border-radius: 8px; transition: all 0.2s ease;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 600;
+      font-family: 'Inter', sans-serif; cursor: pointer; border: none; transition: all .15s;
       text-decoration: none; white-space: nowrap;
     }
-    .btn-primary {
-      background: var(--teal); color: var(--white);
-      padding: 14px 28px; box-shadow: 0 4px 14px rgba(18,120,144,0.35);
-    }
-    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(18,120,144,0.45); }
-    .btn-secondary {
-      background: transparent; color: var(--navy);
-      padding: 14px 28px; border: 2px solid var(--navy);
-    }
-    .btn-secondary:hover { background: var(--navy); color: var(--white); }
-    .btn-white {
-      background: var(--white); color: var(--navy);
-      padding: 14px 28px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);
-    }
-    .btn-white:hover { background: var(--off-white); transform: translateY(-1px); }
-    .btn-lg { padding: 18px 36px; font-size: 16px; border-radius: 10px; }
-    .badge {
-      display: inline-block; padding: 4px 10px; border-radius: 6px;
-      font-size: 12px; font-weight: 600; letter-spacing: 0.02em;
-    }
-    .badge-teal { background: var(--teal-pale); color: var(--teal-dark); }
-    .badge-navy { background: #e8ecf4; color: var(--navy); }
+    .btn-primary { background: var(--navy); color: white; box-shadow: var(--shadow-sm); }
+    .btn-primary:hover { background: var(--navy-mid); box-shadow: var(--shadow); transform: translateY(-1px); }
+    .btn-gold { background: var(--gold); color: white; box-shadow: 0 2px 8px rgba(196,145,43,.3); }
+    .btn-gold:hover { background: var(--gold-bright); transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: var(--navy); border: 1.5px solid var(--border-strong); }
+    .btn-outline:hover { background: var(--navy); color: white; border-color: var(--navy); }
+    .btn-lg { padding: 14px 32px; font-size: 15px; border-radius: var(--radius); }
 
-    /* ── HEADER / NAV ── */
-    header {
-      position: sticky; top: 0; z-index: 1000;
-      background: rgba(255,255,255,0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--grey-100);
-      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    /* ── NAV ── */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--nav-bg);
+      border-bottom: 1px solid rgba(255,255,255,.06);
     }
-    nav { display: flex; align-items: center; height: 72px; gap: 32px; }
-    .nav-logo {
-      display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0;
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; gap: 24px; height: 72px;
     }
-    .nav-logo-icon {
-      width: 40px; height: 40px; border-radius: 10px;
-      background: linear-gradient(135deg, var(--teal) 0%, var(--navy) 100%);
-      display: flex; align-items: center; justify-content: center;
-    }
-    .nav-logo-icon svg { width: 22px; height: 22px; fill: white; }
-    .nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-    .nav-logo-text strong {
-      font-size: 16px; font-weight: 800; color: var(--navy); letter-spacing: -0.02em;
-    }
-    .nav-logo-text span { font-size: 11px; color: var(--grey-400); font-weight: 500; }
-    .nav-links { display: flex; align-items: center; gap: 8px; flex: 1; }
+    .nav-logo-img { height: 50px; width: auto; display: block; flex-shrink: 0; }
+    .nav-links { display: flex; align-items: center; gap: 2px; flex: 1; margin-left: 8px; }
     .nav-links a {
-      font-size: 14px; font-weight: 500; color: var(--grey-600);
-      text-decoration: none; padding: 8px 12px; border-radius: 8px;
-      transition: all 0.15s;
+      font-size: 14px; font-weight: 500; color: rgba(255,255,255,.6);
+      padding: 8px 14px; border-radius: var(--radius-sm); transition: all .15s;
     }
-    .nav-links a:hover { color: var(--navy); background: var(--grey-50); }
-    .nav-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-    .nav-right .btn-login {
-      background: var(--navy); color: var(--white);
-      padding: 9px 20px; font-size: 14px; border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(28,52,97,0.25);
-    }
-    .nav-right .btn-login:hover { background: var(--navy-light); transform: translateY(-1px); }
-    .nav-mobile-toggle {
-      display: none; flex-direction: column; gap: 4px; cursor: pointer;
-      padding: 8px; border: none; background: transparent;
-    }
-    .nav-mobile-toggle span {
-      display: block; width: 22px; height: 2px;
-      background: var(--navy); border-radius: 2px; transition: 0.2s;
-    }
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .nav-mobile-toggle { display: flex; }
+    .nav-links a:hover { color: white; background: rgba(255,255,255,.08); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; margin-left: auto; flex-shrink: 0; }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; color: rgba(255,255,255,.8); font-size: 22px; padding: 6px; line-height: 1; }
+
+    @media (max-width: 820px) {
+      .nav-links { display: none; position: absolute; top: 72px; left: 0; right: 0; flex-direction: column; align-items: stretch; background: var(--nav-bg); padding: 12px 16px 20px; border-bottom: 1px solid rgba(255,255,255,.08); gap: 2px; }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 10px 14px; }
+      .nav-toggle { display: block; }
     }
 
     /* ── HERO ── */
-    .hero {
-      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 40%, var(--teal-dark) 100%);
-      padding: 100px 0 80px; position: relative; overflow: hidden;
-    }
-    .hero::before {
-      content: ''; position: absolute; inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-    .hero::after {
-      content: ''; position: absolute; right: -100px; top: -100px;
-      width: 600px; height: 600px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(18,120,144,0.2) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-inner {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
-      position: relative; z-index: 1;
-    }
-    .hero-content { color: var(--white); }
+    .hero { background: var(--surface); padding: 88px 0 72px; border-bottom: 1px solid var(--border); }
+    .hero-inner { display: grid; grid-template-columns: 1fr 400px; gap: 64px; align-items: center; }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
-      color: rgba(255,255,255,0.9); font-size: 13px; font-weight: 600;
-      padding: 7px 16px; border-radius: 100px; margin-bottom: 24px;
-      backdrop-filter: blur(8px);
+      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+      color: var(--teal); padding: 6px 14px; border-radius: 100px;
+      background: var(--teal-light); margin-bottom: 24px; font-family: 'Inter', sans-serif;
     }
-    .hero-badge::before {
-      content: ''; width: 8px; height: 8px; background: #4ade80;
-      border-radius: 50%; animation: pulse 2s infinite;
-    }
-    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.7;transform:scale(1.2)} }
-    .hero h1 {
-      font-size: clamp(36px, 5vw, 58px); font-weight: 900; line-height: 1.08;
-      letter-spacing: -0.02em; margin-bottom: 24px;
-    }
-    .hero h1 .accent { color: #5dd8f0; }
-    .hero-sub {
-      font-size: 18px; color: rgba(255,255,255,0.75); line-height: 1.7;
-      margin-bottom: 36px; max-width: 520px;
-    }
+    .hero-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); flex-shrink: 0; }
+    .hero h1 { margin-bottom: 22px; }
+    .hero h1 .accent { color: var(--gold); }
+    .hero-sub { font-size: 17px; color: var(--text-2); line-height: 1.75; margin-bottom: 40px; max-width: 500px; }
     .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
-    .hero-visual {
-      display: flex; justify-content: center; align-items: center;
-      position: relative; z-index: 1;
-    }
-    .hero-card {
-      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
-      border-radius: var(--radius-lg); padding: 32px; backdrop-filter: blur(16px);
-      width: 100%; max-width: 380px;
-    }
-    .hero-card-title {
-      color: white; font-size: 20px; font-weight: 700; margin-bottom: 20px;
-    }
-    .hero-stat-row {
-      display: flex; gap: 16px; margin-bottom: 20px;
-    }
-    .hero-stat {
-      flex: 1; background: rgba(255,255,255,0.08); border-radius: 10px; padding: 16px 12px;
-      text-align: center;
-    }
-    .hero-stat-num { font-size: 28px; font-weight: 900; color: #5dd8f0; line-height: 1; }
-    .hero-stat-lbl { font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
-    .hero-features { display: flex; flex-direction: column; gap: 10px; }
-    .hero-feature {
-      display: flex; align-items: center; gap: 10px;
-      color: rgba(255,255,255,0.85); font-size: 14px; font-weight: 500;
-    }
-    .hero-feature-icon {
-      width: 28px; height: 28px; border-radius: 6px;
-      background: rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center;
-      font-size: 14px; flex-shrink: 0;
-    }
-    @media (max-width: 768px) {
-      .hero-inner { grid-template-columns: 1fr; gap: 48px; }
-      .hero-visual { display: none; }
-    }
 
-    /* ── STATS BAR ── */
-    .stats-bar {
-      background: var(--navy); padding: 0;
-    }
-    .stats-bar-inner {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      border-left: 1px solid rgba(255,255,255,0.08);
-    }
-    .stat-item {
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      padding: 36px 24px; text-align: center;
-      border-right: 1px solid rgba(255,255,255,0.08);
-      position: relative; transition: background 0.2s;
-    }
-    .stat-item:hover { background: rgba(255,255,255,0.04); }
-    .stat-number {
-      font-size: clamp(36px, 5vw, 52px); font-weight: 900; color: #5dd8f0;
-      line-height: 1; letter-spacing: -0.02em;
-    }
-    .stat-label {
-      font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.7);
-      margin-top: 8px; text-transform: uppercase; letter-spacing: 0.05em;
-    }
-    .stat-sub { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 4px; }
-    @media (max-width: 600px) {
-      .stats-bar-inner { grid-template-columns: 1fr; }
-    }
+    /* Hero card (mirrors LMS dashboard card) */
+    .hero-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); overflow: hidden; }
+    .hero-card-header { background: var(--nav-bg); padding: 20px 24px 18px; }
+    .hero-card-header-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.45); margin-bottom: 5px; font-family: 'Inter', sans-serif; }
+    .hero-card-header-title { font-size: 17px; font-weight: 700; color: white; font-family: 'Inter', sans-serif; }
+    .hero-card-body { padding: 22px; }
+    .hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 18px; }
+    .hero-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 10px; text-align: center; }
+    .hero-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; color: var(--navy); line-height: 1; }
+    .hero-stat-lbl { font-size: 10px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+    .hero-features { display: flex; flex-direction: column; gap: 8px; }
+    .hero-feature { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: var(--radius-sm); background: var(--bg); border: 1px solid var(--border); }
+    .hero-feature-icon { width: 28px; height: 28px; border-radius: 7px; background: var(--gold-dim); display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+    .hero-feature-text { font-size: 13px; font-weight: 500; color: var(--text); }
 
-    /* ── PROGRAMMES ── */
-    #programmes { background: var(--off-white); }
-    .programmes-header { text-align: center; margin-bottom: 56px; }
-    .programmes-header .section-sub { margin: 0 auto; }
-    .programmes-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px;
-    }
-    .programme-card {
-      background: var(--white); border-radius: var(--radius-lg);
-      border: 1px solid var(--grey-100); padding: 28px;
-      box-shadow: var(--shadow-sm); transition: all 0.25s ease; cursor: pointer;
-      position: relative; overflow: hidden;
-    }
-    .programme-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-      background: linear-gradient(90deg, var(--teal), var(--navy)); transform: scaleX(0);
-      transform-origin: left; transition: transform 0.3s ease;
-    }
-    .programme-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-    .programme-card:hover::before { transform: scaleX(1); }
-    .prog-icon {
-      width: 52px; height: 52px; border-radius: 12px;
-      background: var(--teal-pale); display: flex; align-items: center;
-      justify-content: center; font-size: 24px; margin-bottom: 16px;
-    }
-    .prog-title { font-size: 17px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-    .prog-desc { font-size: 14px; color: var(--grey-600); line-height: 1.6; margin-bottom: 16px; }
-    .prog-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-    .prog-lessons { font-size: 13px; font-weight: 600; color: var(--teal); }
-
-    /* ── FEATURE HIGHLIGHTS ── */
-    #features { background: var(--white); }
-    .features-header { text-align: center; margin-bottom: 64px; }
-    .features-header .section-sub { margin: 0 auto; }
-    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
-    .feature-card {
-      border-radius: var(--radius-lg); overflow: hidden;
-      box-shadow: var(--shadow); border: 1px solid var(--grey-100); transition: all 0.25s;
-    }
-    .feature-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); }
-    .feature-card-top {
-      padding: 40px 32px 32px;
-      background: linear-gradient(135deg, var(--navy) 0%, var(--teal-dark) 100%);
-      position: relative; overflow: hidden; min-height: 200px;
-      display: flex; flex-direction: column; justify-content: flex-end;
-    }
-    .feature-card-top::before {
-      content: ''; position: absolute; top: -40px; right: -40px;
-      width: 160px; height: 160px; border-radius: 50%;
-      background: rgba(255,255,255,0.06);
-    }
-    .feature-card-icon {
-      font-size: 40px; margin-bottom: 16px; position: relative; z-index: 1;
-    }
-    .feature-card-title {
-      font-size: 22px; font-weight: 800; color: white; position: relative; z-index: 1;
-    }
-    .feature-card-body { padding: 28px 32px; background: var(--white); }
-    .feature-card-desc { font-size: 15px; color: var(--grey-600); line-height: 1.7; margin-bottom: 20px; }
-    .feature-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .feature-list li {
-      display: flex; align-items: flex-start; gap: 10px;
-      font-size: 14px; color: var(--grey-600);
-    }
-    .feature-list li::before {
-      content: '✓'; width: 20px; height: 20px; border-radius: 50%;
-      background: var(--teal-pale); color: var(--teal); font-size: 11px; font-weight: 700;
-      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
-    }
-    @media (max-width: 900px) {
-      .features-grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
-    }
-
-    /* ── COMPLIANCE CHECKLIST ── */
-    #compliance { background: var(--navy); }
-    .compliance-inner {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
-    }
-    .compliance-left { color: white; }
-    .compliance-left .section-tag {
-      background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.9); border: 1px solid rgba(255,255,255,0.15);
-    }
-    .compliance-left .section-tag::before { background: #4ade80; }
-    .compliance-left h2 { color: white; margin-bottom: 16px; }
-    .compliance-left p { color: rgba(255,255,255,0.7); margin-bottom: 32px; }
-    .compliance-logos {
-      display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px;
-    }
-    .compliance-logo-badge {
-      padding: 10px 18px; background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15); border-radius: 10px;
-      color: rgba(255,255,255,0.85); font-size: 13px; font-weight: 700;
-      letter-spacing: 0.05em;
-    }
-    .checklist {
-      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
-      border-radius: var(--radius-lg); padding: 32px;
-    }
-    .checklist-title {
-      font-size: 18px; font-weight: 700; color: white; margin-bottom: 24px;
-      display: flex; align-items: center; gap: 10px;
-    }
-    .checklist-item {
-      display: flex; align-items: flex-start; gap: 14px; padding: 14px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .checklist-item:last-child { border-bottom: none; padding-bottom: 0; }
-    .check-box {
-      width: 22px; height: 22px; border-radius: 6px; background: #4ade80;
-      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
-    }
-    .check-box svg { width: 12px; height: 12px; stroke: #166534; stroke-width: 2.5; fill: none; }
-    .checklist-text strong {
-      display: block; font-size: 15px; font-weight: 600; color: white; margin-bottom: 2px;
-    }
-    .checklist-text span { font-size: 13px; color: rgba(255,255,255,0.55); }
-    @media (max-width: 768px) {
-      .compliance-inner { grid-template-columns: 1fr; gap: 48px; }
-    }
-
-    /* ── ABOUT ── */
-    #about { background: var(--grey-50); }
-    .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .about-visual {
-      background: linear-gradient(135deg, var(--teal) 0%, var(--navy) 100%);
-      border-radius: var(--radius-lg); padding: 48px 40px;
-      color: white; position: relative; overflow: hidden;
-    }
-    .about-visual::after {
-      content: ''; position: absolute; bottom: -60px; right: -60px;
-      width: 200px; height: 200px; border-radius: 50%;
-      background: rgba(255,255,255,0.07);
-    }
-    .about-visual-title { font-size: 28px; font-weight: 800; margin-bottom: 12px; }
-    .about-visual-sub { font-size: 15px; color: rgba(255,255,255,0.75); margin-bottom: 36px; }
-    .about-values { display: flex; flex-direction: column; gap: 14px; }
-    .about-value {
-      display: flex; align-items: center; gap: 14px;
-      background: rgba(255,255,255,0.1); border-radius: 10px; padding: 14px 16px;
-    }
-    .about-value-icon { font-size: 22px; flex-shrink: 0; }
-    .about-value-text strong { display: block; font-size: 14px; font-weight: 700; }
-    .about-value-text span { font-size: 12px; color: rgba(255,255,255,0.6); }
-    .about-content { }
-    .about-content h2 { margin-bottom: 16px; }
-    .about-content p { font-size: 16px; color: var(--grey-600); line-height: 1.8; margin-bottom: 16px; }
-    .about-team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
-    .about-team-card {
-      background: var(--white); border: 1px solid var(--grey-100); border-radius: var(--radius);
-      padding: 20px; box-shadow: var(--shadow-sm);
-    }
-    .about-team-card strong { display: block; font-size: 15px; font-weight: 700; color: var(--navy); }
-    .about-team-card span { font-size: 13px; color: var(--grey-600); }
-    @media (max-width: 768px) {
-      .about-inner { grid-template-columns: 1fr; gap: 48px; }
-    }
-
-    /* ── PRICING ── */
-    #pricing { background: var(--white); }
-    .pricing-header { text-align: center; margin-bottom: 56px; }
-    .pricing-header .section-sub { margin: 0 auto; }
-    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: start; }
-    .pricing-card {
-      border-radius: var(--radius-lg); border: 1px solid var(--grey-100);
-      overflow: hidden; box-shadow: var(--shadow); transition: all 0.25s;
-    }
-    .pricing-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-    .pricing-card.popular {
-      border-color: var(--teal); box-shadow: 0 8px 32px rgba(18,120,144,0.2);
-    }
-    .pricing-card-head {
-      padding: 32px 28px 24px; background: var(--grey-50); border-bottom: 1px solid var(--grey-100);
-    }
-    .pricing-card.popular .pricing-card-head {
-      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%); color: white;
-      border-bottom-color: rgba(255,255,255,0.1);
-    }
-    .pricing-popular-badge {
-      display: inline-block; background: #fbbf24; color: #78350f;
-      font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 100px;
-      margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.06em;
-    }
-    .pricing-plan-name {
-      font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 4px;
-    }
-    .pricing-card.popular .pricing-plan-name { color: white; }
-    .pricing-plan-desc { font-size: 14px; color: var(--grey-600); }
-    .pricing-card.popular .pricing-plan-desc { color: rgba(255,255,255,0.75); }
-    .pricing-price {
-      margin-top: 20px; display: flex; align-items: baseline; gap: 4px;
-    }
-    .pricing-amount {
-      font-size: 40px; font-weight: 900; color: var(--navy); letter-spacing: -0.02em;
-    }
-    .pricing-card.popular .pricing-amount { color: white; }
-    .pricing-per { font-size: 14px; color: var(--grey-400); }
-    .pricing-card.popular .pricing-per { color: rgba(255,255,255,0.6); }
-    .pricing-card-body { padding: 28px; }
-    .pricing-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
-    .pricing-features li {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 14px; color: var(--grey-600);
-    }
-    .pricing-features li::before {
-      content: '✓'; width: 18px; height: 18px; border-radius: 4px;
-      background: var(--teal-pale); color: var(--teal); font-size: 10px; font-weight: 700;
-      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-    }
-    .pricing-features li.na { color: var(--grey-200); }
-    .pricing-features li.na::before { background: var(--grey-50); color: var(--grey-200); content: '—'; }
-    @media (max-width: 900px) {
-      .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
-    }
-
-    /* ── CONTACT ── */
-    #contact { background: var(--grey-50); }
-    .contact-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
-    .contact-info h2 { margin-bottom: 16px; }
-    .contact-info p { font-size: 16px; color: var(--grey-600); line-height: 1.8; margin-bottom: 36px; }
-    .contact-details { display: flex; flex-direction: column; gap: 16px; }
-    .contact-detail {
-      display: flex; align-items: flex-start; gap: 14px;
-      padding: 16px; background: var(--white); border-radius: var(--radius);
-      border: 1px solid var(--grey-100); box-shadow: var(--shadow-sm);
-    }
-    .contact-detail-icon {
-      width: 40px; height: 40px; border-radius: 10px; background: var(--teal-pale);
-      display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;
-    }
-    .contact-detail strong { display: block; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
-    .contact-detail span { font-size: 14px; color: var(--grey-600); }
-    .contact-form {
-      background: var(--white); border: 1px solid var(--grey-100);
-      border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow);
-    }
-    .contact-form h3 { font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 28px; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px; }
-    .form-group label { font-size: 13px; font-weight: 600; color: var(--navy); }
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      padding: 12px 16px; border: 1.5px solid var(--grey-200); border-radius: 8px;
-      font-family: 'Inter', sans-serif; font-size: 14px; color: var(--grey-800);
-      background: var(--white); transition: border 0.2s; outline: none;
-    }
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(18,120,144,0.1); }
-    .form-group textarea { resize: vertical; min-height: 100px; }
-    @media (max-width: 768px) {
-      .contact-inner { grid-template-columns: 1fr; gap: 48px; }
-      .form-row { grid-template-columns: 1fr; }
-    }
-
-    /* ── STAFF LOGIN CARD ── */
-    #login { background: var(--teal-pale); padding: 80px 0; }
-    .login-card {
-      background: var(--white); border-radius: var(--radius-lg);
-      border: 1px solid var(--grey-100); box-shadow: var(--shadow-xl);
-      max-width: 480px; margin: 0 auto; padding: 48px 44px; text-align: center;
-    }
-    .login-card-icon {
-      width: 72px; height: 72px; border-radius: 20px;
-      background: linear-gradient(135deg, var(--teal) 0%, var(--navy) 100%);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 32px; margin: 0 auto 24px;
-    }
-    .login-card h2 { color: var(--navy); margin-bottom: 8px; font-size: 28px; }
-    .login-card p { color: var(--grey-600); margin-bottom: 32px; font-size: 16px; }
-    .login-form { text-align: left; }
-    .login-form .form-group { margin-bottom: 16px; }
-    .login-form .form-group input { width: 100%; }
-    .login-btn { width: 100%; justify-content: center; padding: 15px; font-size: 16px; }
-    .login-forgot {
-      text-align: center; margin-top: 16px;
-      font-size: 14px; color: var(--grey-600);
-    }
-    .login-forgot a { color: var(--teal); text-decoration: none; font-weight: 600; }
-    .login-forgot a:hover { text-decoration: underline; }
-    .login-divider {
-      display: flex; align-items: center; gap: 12px; margin: 24px 0;
-      color: var(--grey-400); font-size: 13px;
-    }
-    .login-divider::before,
-    .login-divider::after { content: ''; flex: 1; height: 1px; background: var(--grey-100); }
-    .login-sso {
-      display: flex; gap: 12px;
-    }
-    .login-sso .btn { flex: 1; border: 1px solid var(--grey-200); color: var(--grey-800); background: white; font-size: 13px; padding: 10px; }
-    .login-sso .btn:hover { background: var(--grey-50); }
-
-    /* ── FOOTER ── */
-    footer { background: var(--navy-dark); color: rgba(255,255,255,0.7); }
-    .footer-top { padding: 64px 0 48px; }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap: 48px; }
-    .footer-brand { }
-    .footer-brand .nav-logo { margin-bottom: 16px; }
-    .footer-brand p { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.55); max-width: 260px; }
-    .footer-brand .nav-logo-text strong { color: white; }
-    .footer-brand .nav-logo-text span { color: rgba(255,255,255,0.45); }
-    .footer-col h4 {
-      font-size: 13px; font-weight: 700; color: white; letter-spacing: 0.08em;
-      text-transform: uppercase; margin-bottom: 16px;
-    }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-col ul li a {
-      font-size: 14px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.15s;
-    }
-    .footer-col ul li a:hover { color: white; }
-    .footer-col .footer-cert {
-      display: flex; align-items: center; gap: 8px; padding: 8px 12px;
-      background: rgba(255,255,255,0.06); border-radius: 8px; margin-bottom: 8px;
-      font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.75);
-    }
-    .footer-cert-dot { width: 8px; height: 8px; border-radius: 50%; background: #4ade80; flex-shrink: 0; }
-    .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.08); padding: 24px 0;
-      display: flex; justify-content: space-between; align-items: center;
-      flex-wrap: wrap; gap: 12px;
-    }
-    .footer-bottom p { font-size: 13px; color: rgba(255,255,255,0.4); }
-    .footer-bottom-links { display: flex; gap: 24px; }
-    .footer-bottom-links a { font-size: 13px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.15s; }
-    .footer-bottom-links a:hover { color: white; }
-    @media (max-width: 900px) {
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 600px) {
-      .footer-grid { grid-template-columns: 1fr; }
-      .footer-bottom { flex-direction: column; text-align: center; }
-    }
+    @media (max-width: 940px) { .hero-inner { grid-template-columns: 1fr; } .hero-card { display: none; } }
 
     /* ── TRUST BAR ── */
-    .trust-bar { background: var(--off-white); border-bottom: 1px solid var(--grey-100); padding: 20px 0; }
-    .trust-bar-inner {
-      display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap;
+    .trust-bar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 18px 0; }
+    .trust-bar-inner { display: flex; gap: 32px; align-items: center; justify-content: center; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 9px; font-size: 13px; font-weight: 600; color: var(--text-2); }
+    .trust-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--success); flex-shrink: 0; }
+
+    /* ── STATS ── */
+    .stats-bar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 56px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+    @media (max-width: 640px) { .stats-grid { grid-template-columns: repeat(2,1fr); } }
+    .stat-item { text-align: center; }
+    .stat-number { font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 700; color: var(--navy); line-height: 1; margin-bottom: 6px; }
+    .stat-label { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; }
+
+    /* ── PROGRAMMES ── */
+    #programmes { background: var(--bg); }
+    .programmes-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
+    @media (max-width: 1024px) { .programmes-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 560px) { .programmes-grid { grid-template-columns: 1fr; } }
+    .prog-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow-xs);
+      transition: all .2s; display: flex; flex-direction: column;
     }
-    .trust-item {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 13px; font-weight: 600; color: var(--grey-600);
+    .prog-card:hover { box-shadow: var(--shadow); border-color: var(--border-strong); transform: translateY(-2px); }
+    .prog-icon { font-size: 26px; margin-bottom: 12px; }
+    .prog-title { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 700; color: var(--navy); margin-bottom: 8px; line-height: 1.3; }
+    .prog-desc { font-size: 13px; color: var(--text-2); line-height: 1.6; margin-bottom: 14px; flex: 1; }
+    .prog-meta { display: flex; align-items: center; gap: 8px; margin-top: auto; }
+    .prog-lessons { font-size: 11px; font-weight: 700; color: var(--gold); background: var(--gold-dim); padding: 3px 10px; border-radius: 100px; }
+    .prog-cert { font-size: 11px; font-weight: 600; color: var(--success); background: var(--success-bg); padding: 3px 10px; border-radius: 100px; }
+
+    /* ── FEATURES ── */
+    #features { background: var(--surface); }
+    .features-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    @media (max-width: 768px) { .features-grid { grid-template-columns: 1fr; } }
+    .feature-card { border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: all .2s; }
+    .feature-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+    .feature-card-top { padding: 22px; border-bottom: 1px solid var(--border); background: var(--bg); display: flex; align-items: center; gap: 14px; }
+    .feature-card-icon { width: 46px; height: 46px; border-radius: var(--radius-sm); background: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+    .feature-card-title { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 700; color: var(--navy); }
+    .feature-card-body { padding: 22px; background: var(--surface); }
+    .feature-card-desc { font-size: 14px; color: var(--text-2); line-height: 1.7; margin-bottom: 18px; }
+    .feature-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .feature-list li { font-size: 13px; color: var(--text-2); padding-left: 20px; position: relative; }
+    .feature-list li::before { content: ''; position: absolute; left: 0; top: 7px; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
+
+    /* ── COMPLIANCE (dark) ── */
+    .compliance-section { background: var(--nav-bg); padding: 88px 0; }
+    .compliance-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    @media (max-width: 768px) { .compliance-inner { grid-template-columns: 1fr; gap: 48px; } }
+    .compliance-left .section-tag { color: var(--gold-bright); background: rgba(196,145,43,.15); }
+    .compliance-left h2 { color: white; margin-bottom: 16px; }
+    .compliance-left p { color: rgba(255,255,255,.65); margin-bottom: 32px; font-size: 16px; line-height: 1.75; }
+    .compliance-badges { display: flex; flex-wrap: wrap; gap: 10px; }
+    .compliance-badge { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.11); border-radius: var(--radius-sm); padding: 9px 15px; font-size: 13px; font-weight: 600; color: white; }
+    .compliance-badge-dot { width: 7px; height: 7px; border-radius: 50%; background: #4ade80; flex-shrink: 0; }
+    .compliance-right { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .compliance-stat-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.09); border-radius: var(--radius); padding: 24px; text-align: center; }
+    .compliance-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 44px; font-weight: 700; color: var(--gold-bright); line-height: 1; margin-bottom: 8px; }
+    .compliance-stat-lbl { font-size: 12px; color: rgba(255,255,255,.55); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+
+    /* ── PRICING ── */
+    #pricing { background: var(--surface-2); }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; align-items: start; }
+    @media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; } }
+    .pricing-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: all .2s; }
+    .pricing-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .pricing-card.popular { background: var(--navy); border-color: var(--navy); box-shadow: var(--shadow-xl); }
+    .pricing-card-head { padding: 28px; border-bottom: 1px solid var(--border); }
+    .pricing-card.popular .pricing-card-head { border-bottom-color: rgba(255,255,255,.1); }
+    .pricing-popular-badge { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--navy); background: var(--gold); padding: 4px 12px; border-radius: 100px; margin-bottom: 12px; }
+    .pricing-plan-name { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .pricing-card.popular .pricing-plan-name { color: white; }
+    .pricing-plan-desc { font-size: 13px; color: var(--muted); margin-bottom: 18px; }
+    .pricing-card.popular .pricing-plan-desc { color: rgba(255,255,255,.5); }
+    .pricing-amount { font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 700; color: var(--navy); line-height: 1; }
+    .pricing-card.popular .pricing-amount { color: white; }
+    .pricing-per { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .pricing-card.popular .pricing-per { color: rgba(255,255,255,.45); }
+    .pricing-card-body { padding: 28px; }
+    .pricing-features { list-style: none; display: flex; flex-direction: column; gap: 11px; margin-bottom: 28px; }
+    .pricing-features li { font-size: 14px; color: var(--text-2); padding-left: 22px; position: relative; }
+    .pricing-features li::before { content: '✓'; position: absolute; left: 0; color: var(--success); font-weight: 700; font-size: 13px; }
+    .pricing-features li.na { color: var(--muted); }
+    .pricing-features li.na::before { content: '—'; color: var(--border-strong); }
+    .pricing-card.popular .pricing-features li { color: rgba(255,255,255,.75); }
+    .pricing-card.popular .pricing-features li::before { color: var(--gold-bright); }
+    .pricing-card.popular .pricing-features li.na { color: rgba(255,255,255,.3); }
+    .pricing-card.popular .pricing-features li.na::before { color: rgba(255,255,255,.2); }
+
+    /* ── ABOUT ── */
+    #about { background: var(--bg); }
+    .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+    @media (max-width: 800px) { .about-inner { grid-template-columns: 1fr; gap: 48px; } }
+    .about-visual-card { background: var(--nav-bg); border-radius: var(--radius-lg); padding: 36px; box-shadow: var(--shadow-xl); }
+    .about-visual-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--gold); margin-bottom: 10px; }
+    .about-visual-title { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: white; margin-bottom: 12px; line-height: 1.3; }
+    .about-visual-sub { font-size: 14px; color: rgba(255,255,255,.6); line-height: 1.75; margin-bottom: 28px; }
+    .about-values { display: flex; flex-direction: column; gap: 14px; }
+    .about-value { display: flex; align-items: flex-start; gap: 13px; }
+    .about-value-icon { width: 34px; height: 34px; border-radius: 8px; background: rgba(196,145,43,.18); display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+    .about-value-text strong { display: block; font-size: 13px; font-weight: 700; color: white; margin-bottom: 2px; }
+    .about-value-text span { font-size: 12px; color: rgba(255,255,255,.5); }
+    .about-content p { margin-bottom: 15px; font-size: 15px; }
+    .about-team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
+    .about-team-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px; box-shadow: var(--shadow-xs); }
+    .about-team-card strong { display: block; font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+    .about-team-card span { font-size: 12px; color: var(--muted); }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--surface); }
+    .contact-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 72px; align-items: start; }
+    @media (max-width: 900px) { .contact-inner { grid-template-columns: 1fr; gap: 48px; } }
+    .contact-info p { font-size: 15px; color: var(--text-2); line-height: 1.8; margin-bottom: 32px; }
+    .contact-details { display: flex; flex-direction: column; gap: 14px; }
+    .contact-detail { display: flex; align-items: flex-start; gap: 14px; }
+    .contact-detail-icon { width: 38px; height: 38px; border-radius: var(--radius-sm); background: var(--gold-dim); display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
+    .contact-detail strong { display: block; font-size: 12px; font-weight: 700; color: var(--navy); margin-bottom: 2px; text-transform: uppercase; letter-spacing: .05em; }
+    .contact-detail span { font-size: 14px; color: var(--text-2); }
+    .contact-form-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 36px; box-shadow: var(--shadow); }
+    .contact-form-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 700; color: var(--navy); margin-bottom: 26px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
+    .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+    .form-group label { font-size: 12px; font-weight: 700; color: var(--text); text-transform: uppercase; letter-spacing: .05em; }
+    .form-group input, .form-group select, .form-group textarea {
+      padding: 10px 13px; border-radius: var(--radius-sm);
+      border: 1.5px solid var(--border); font-size: 14px; font-family: 'Inter', sans-serif;
+      color: var(--text); background: var(--surface); outline: none; transition: border-color .15s;
     }
-    .trust-item-icon { font-size: 16px; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--navy); box-shadow: 0 0 0 3px rgba(13,32,82,.07);
+    }
+    .form-group textarea { min-height: 100px; resize: vertical; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--nav-bg); color: rgba(255,255,255,.6); }
+    .footer-top { padding: 64px 0 48px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap: 48px; }
+    @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
+    .footer-logo { height: 46px; width: auto; margin-bottom: 14px; display: block; }
+    .footer-brand p { font-size: 13px; line-height: 1.7; color: rgba(255,255,255,.4); max-width: 240px; margin-bottom: 16px; }
+    .footer-cert { display: flex; align-items: center; gap: 8px; font-size: 12px; color: rgba(255,255,255,.45); }
+    .footer-col h4 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--gold); margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .footer-col ul li a { font-size: 13px; color: rgba(255,255,255,.45); transition: color .15s; }
+    .footer-col ul li a:hover { color: white; }
+    .footer-bottom { padding: 22px 0; border-top: 1px solid rgba(255,255,255,.07); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+    .footer-bottom p { font-size: 12px; color: rgba(255,255,255,.3); }
+    .footer-bottom-links { display: flex; gap: 22px; }
+    .footer-bottom-links a { font-size: 12px; color: rgba(255,255,255,.3); transition: color .15s; }
+    .footer-bottom-links a:hover { color: white; }
+
+    @media (max-width: 560px) { .footer-bottom { flex-direction: column; text-align: center; } }
   </style>
 </head>
 <body>
 
-<!-- ════════════════════════════════════════════
-     HEADER / NAV
-════════════════════════════════════════════ -->
-<header>
-  <div class="container">
-    <nav>
-      <a href="#" class="nav-logo" aria-label="Pearl Care Training Academy">
-        <img src="https://learn.pearlcaretraining.co.uk/Logo.png.png" alt="Pearl Care Training Academy" style="height:56px;width:auto;">
-      </a>
-      <div class="nav-links">
-        <a href="#programmes">Programmes</a>
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="nav-right">
-        <a href="/lms" class="btn btn-login">Login</a>
-      </div>
-      <button class="nav-mobile-toggle" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
+<!-- ── NAV ── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#home"><img src="https://learn.pearlcaretraining.co.uk/Logo.png.png" alt="Pearl Care Training Academy" class="nav-logo-img" /></a>
+    <div class="nav-links" id="nav-links">
+      <a href="#programmes">Programmes</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-toggle" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+      <a href="https://learn.pearlcaretraining.co.uk" class="btn btn-gold">Login</a>
+    </div>
   </div>
-</header>
+</nav>
 
-<!-- ════════════════════════════════════════════
-     HERO
-════════════════════════════════════════════ -->
+<!-- ── HERO ── -->
 <section class="hero" id="home">
   <div class="container">
     <div class="hero-inner">
@@ -638,42 +338,35 @@
         <p class="hero-sub">Pearl Care Training Academy delivers UK-leading care education: 79 expert lessons, AI avatar video content, an intelligent Claude AI Coach, and CQC compliance tools built for care professionals.</p>
         <div class="hero-ctas">
           <a href="#programmes" class="btn btn-primary btn-lg">Explore Programmes</a>
-          <a href="/lms" class="btn btn-white btn-lg">Login &rarr;</a>
+          <a href="https://learn.pearlcaretraining.co.uk" class="btn btn-outline btn-lg">Login →</a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="hero-card">
-          <div class="hero-card-title">Your Learning Dashboard</div>
-          <div class="hero-stat-row">
-            <div class="hero-stat">
-              <div class="hero-stat-num">79</div>
-              <div class="hero-stat-lbl">Lessons</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-num">8</div>
-              <div class="hero-stat-lbl">Programmes</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-num">100%</div>
-              <div class="hero-stat-lbl">Care Cert.</div>
-            </div>
+          <div class="hero-card-header">
+            <div class="hero-card-header-label">Platform Overview</div>
+            <div class="hero-card-header-title">Your Learning Dashboard</div>
           </div>
-          <div class="hero-features">
-            <div class="hero-feature">
-              <div class="hero-feature-icon">🤖</div>
-              AI Avatar Video Lessons
+          <div class="hero-card-body">
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-num">79</div>
+                <div class="hero-stat-lbl">Lessons</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-num">8</div>
+                <div class="hero-stat-lbl">Programmes</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-num">100%</div>
+                <div class="hero-stat-lbl">Care Cert.</div>
+              </div>
             </div>
-            <div class="hero-feature">
-              <div class="hero-feature-icon">💬</div>
-              Claude AI Coach, 24/7
-            </div>
-            <div class="hero-feature">
-              <div class="hero-feature-icon">✅</div>
-              CQC Compliance Tracking
-            </div>
-            <div class="hero-feature">
-              <div class="hero-feature-icon">📜</div>
-              Instant Certificates
+            <div class="hero-features">
+              <div class="hero-feature"><div class="hero-feature-icon">🎥</div><div class="hero-feature-text">AI Avatar Video Lessons</div></div>
+              <div class="hero-feature"><div class="hero-feature-icon">🤖</div><div class="hero-feature-text">Claude AI Coach, 24/7</div></div>
+              <div class="hero-feature"><div class="hero-feature-icon">✅</div><div class="hero-feature-text">CQC Compliance Tracking</div></div>
+              <div class="hero-feature"><div class="hero-feature-icon">📜</div><div class="hero-feature-text">Instant Certificates</div></div>
             </div>
           </div>
         </div>
@@ -682,154 +375,100 @@
   </div>
 </section>
 
-<!-- ════════════════════════════════════════════
-     TRUST BAR
-════════════════════════════════════════════ -->
-<div class="trust-bar">
+<!-- ── TRUST BAR ── -->
+<section class="trust-bar">
   <div class="container">
     <div class="trust-bar-inner">
-      <div class="trust-item"><span class="trust-item-icon">🏥</span> CQC-Aligned Curriculum</div>
-      <div class="trust-item"><span class="trust-item-icon">🎓</span> Skills for Care Standards</div>
-      <div class="trust-item"><span class="trust-item-icon">📋</span> Care Certificate Compliant</div>
-      <div class="trust-item"><span class="trust-item-icon">🔒</span> UK GDPR &amp; Data Protection</div>
-    </div>
-  </div>
-</div>
-
-<!-- ════════════════════════════════════════════
-     STATS BAR
-════════════════════════════════════════════ -->
-<section class="stats-bar">
-  <div class="container">
-    <div class="stats-bar-inner">
-      <div class="stat-item">
-        <div class="stat-number">79</div>
-        <div class="stat-label">Expert Lessons</div>
-        <div class="stat-sub">Across all 8 programmes</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">8</div>
-        <div class="stat-label">Training Programmes</div>
-        <div class="stat-sub">From induction to management</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">100%</div>
-        <div class="stat-label">Care Certificate</div>
-        <div class="stat-sub">All 15 standards covered</div>
-      </div>
+      <div class="trust-item"><div class="trust-dot"></div>CQC-Aligned Curriculum</div>
+      <div class="trust-item"><div class="trust-dot"></div>Skills for Care Standards</div>
+      <div class="trust-item"><div class="trust-dot"></div>Care Certificate Compliant</div>
+      <div class="trust-item"><div class="trust-dot"></div>UK GDPR &amp; Data Protection</div>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════════════════════
-     PROGRAMMES
-════════════════════════════════════════════ -->
+<!-- ── STATS ── -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item"><div class="stat-number">79</div><div class="stat-label">Expert Lessons</div></div>
+      <div class="stat-item"><div class="stat-number">8</div><div class="stat-label">Programmes</div></div>
+      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Care Certificate</div></div>
+      <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">AI Coach Access</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROGRAMMES ── -->
 <section class="section" id="programmes">
   <div class="container">
-    <div class="programmes-header">
+    <div class="section-header">
       <div class="section-tag">8 Training Programmes</div>
       <h2 class="section-title">Everything Your Team Needs to Excel</h2>
       <p class="section-sub">Structured learning pathways from first-day induction through to advanced care management, all aligned to UK regulatory standards.</p>
     </div>
     <div class="programmes-grid">
-
-      <div class="programme-card">
+      <div class="prog-card">
         <div class="prog-icon">🏁</div>
         <div class="prog-title">Care Certificate Induction</div>
         <div class="prog-desc">Full coverage of all 15 Care Certificate standards. The essential starting point for every new care worker entering the sector.</div>
-        <div class="prog-meta">
-          <span class="prog-lessons">15 Lessons</span>
-          <span class="badge badge-teal">Core</span>
-          <span class="badge badge-navy">All Staff</span>
-        </div>
+        <div class="prog-meta"><span class="prog-lessons">15 Lessons</span><span class="prog-cert">Care Cert.</span></div>
       </div>
-
-      <div class="programme-card">
+      <div class="prog-card">
         <div class="prog-icon">💊</div>
         <div class="prog-title">Medication Management</div>
         <div class="prog-desc">Safe handling, administration, and storage of medications. Covers controlled drugs, MAR charts, and common errors prevention.</div>
-        <div class="prog-meta">
-          <span class="prog-lessons">10 Lessons</span>
-          <span class="badge badge-teal">Clinical</span>
-        </div>
+        <div class="prog-meta"><span class="prog-lessons">10 Lessons</span></div>
       </div>
-
-      <div class="programme-card">
+      <div class="prog-card">
         <div class="prog-icon">🛡️</div>
         <div class="prog-title">Safeguarding Adults &amp; Children</div>
         <div class="prog-desc">Recognising and responding to abuse, neglect, and exploitation. Meets statutory safeguarding training requirements for CQC inspections.</div>
-        <div class="prog-meta">
-          <span class="prog-lessons">9 Lessons</span>
-          <span class="badge badge-teal">Mandatory</span>
-        </div>
+        <div class="prog-meta"><span class="prog-lessons">9 Lessons</span></div>
       </div>
-
-      <div class="programme-card">
+      <div class="prog-card">
         <div class="prog-icon">🧠</div>
-        <div class="prog-title">Dementia &amp; Mental Health Awareness</div>
+        <div class="prog-title">Dementia &amp; Mental Health</div>
         <div class="prog-desc">Practical knowledge for supporting people living with dementia, depression, anxiety, and other mental health conditions in care settings.</div>
-        <div class="prog-meta">
-          <span class="prog-lessons">10 Lessons</span>
-          <span class="badge badge-teal">Specialist</span>
-        </div>
+        <div class="prog-meta"><span class="prog-lessons">10 Lessons</span></div>
       </div>
-
-      <div class="programme-card">
+      <div class="prog-card">
         <div class="prog-icon">🍽️</div>
-        <div class="prog-title">Nutrition &amp; Hydration in Care</div>
+        <div class="prog-title">Nutrition &amp; Hydration</div>
         <div class="prog-desc">Nutritional assessment, dysphagia awareness, fluid intake monitoring, and personalised meal planning for diverse care needs.</div>
-        <div class="prog-meta">
-          <span class="prog-lessons">8 Lessons</span>
-          <span class="badge badge-teal">Clinical</span>
-        </div>
+        <div class="prog-meta"><span class="prog-lessons">8 Lessons</span></div>
       </div>
-
-      <div class="programme-card">
+      <div class="prog-card">
         <div class="prog-icon">🧹</div>
         <div class="prog-title">Infection Prevention &amp; Control</div>
         <div class="prog-desc">Hand hygiene, PPE use, outbreak management, and environmental cleaning standards. Essential post-pandemic care training.</div>
-        <div class="prog-meta">
-          <span class="prog-lessons">9 Lessons</span>
-          <span class="badge badge-teal">Mandatory</span>
-        </div>
+        <div class="prog-meta"><span class="prog-lessons">9 Lessons</span></div>
       </div>
-
-      <div class="programme-card">
+      <div class="prog-card">
         <div class="prog-icon">⚖️</div>
         <div class="prog-title">Mental Capacity &amp; DoLS</div>
         <div class="prog-desc">Understanding the Mental Capacity Act 2005, best-interest decisions, deprivation of liberty safeguards, and supported decision-making.</div>
-        <div class="prog-meta">
-          <span class="prog-lessons">9 Lessons</span>
-          <span class="badge badge-teal">Legal</span>
-        </div>
+        <div class="prog-meta"><span class="prog-lessons">9 Lessons</span></div>
       </div>
-
-      <div class="programme-card">
+      <div class="prog-card">
         <div class="prog-icon">📊</div>
         <div class="prog-title">Leadership in Care</div>
         <div class="prog-desc">Supervisory skills, team performance, CQC inspection preparation, and quality assurance for care managers and senior staff.</div>
-        <div class="prog-meta">
-          <span class="prog-lessons">9 Lessons</span>
-          <span class="badge badge-navy">Management</span>
-        </div>
+        <div class="prog-meta"><span class="prog-lessons">9 Lessons</span></div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════════════════════
-     FEATURE HIGHLIGHTS
-════════════════════════════════════════════ -->
+<!-- ── FEATURES ── -->
 <section class="section" id="features">
   <div class="container">
-    <div class="features-header">
+    <div class="section-header centered">
       <div class="section-tag">Platform Features</div>
       <h2 class="section-title">Cutting-Edge Tools for Modern Care Training</h2>
-      <p class="section-sub">Pearl Care Training Academy combines next-generation AI technology with deep care sector expertise.</p>
+      <p class="section-sub">Pearl Care combines next-generation AI technology with deep care sector expertise to deliver training that works.</p>
     </div>
     <div class="features-grid">
-
       <div class="feature-card">
         <div class="feature-card-top">
           <div class="feature-card-icon">🎥</div>
@@ -846,7 +485,6 @@
           </ul>
         </div>
       </div>
-
       <div class="feature-card">
         <div class="feature-card-top">
           <div class="feature-card-icon">🤖</div>
@@ -863,14 +501,13 @@
           </ul>
         </div>
       </div>
-
       <div class="feature-card">
         <div class="feature-card-top">
           <div class="feature-card-icon">✅</div>
           <div class="feature-card-title">CQC Compliance Tools</div>
         </div>
         <div class="feature-card-body">
-          <p class="feature-card-desc">Automated tracking of training compliance, certificate expiry, and regulatory requirements, so you're always inspection-ready.</p>
+          <p class="feature-card-desc">Automated tracking of training compliance, certificate expiry, and regulatory requirements — so you're always inspection-ready.</p>
           <ul class="feature-list">
             <li>Real-time compliance dashboard</li>
             <li>Automatic certificate generation and storage</li>
@@ -880,100 +517,62 @@
           </ul>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════════════════════
-     ABOUT
-════════════════════════════════════════════ -->
-<section class="section" id="about">
+<!-- ── COMPLIANCE SECTION (dark) ── -->
+<section class="compliance-section">
   <div class="container">
-    <div class="about-inner">
-      <div class="about-visual">
-        <div class="about-visual-title">Our Mission</div>
-        <div class="about-visual-sub">Empowering care professionals with knowledge, confidence, and the tools to deliver outstanding care, every shift, every day.</div>
-        <div class="about-values">
-          <div class="about-value">
-            <div class="about-value-icon">🌟</div>
-            <div class="about-value-text">
-              <strong>Quality First</strong>
-              <span>Expert-authored, sector-reviewed content</span>
-            </div>
-          </div>
-          <div class="about-value">
-            <div class="about-value-icon">♿</div>
-            <div class="about-value-text">
-              <strong>Accessible Learning</strong>
-              <span>Learn on any device, at any time</span>
-            </div>
-          </div>
-          <div class="about-value">
-            <div class="about-value-icon">🔄</div>
-            <div class="about-value-text">
-              <strong>Always Current</strong>
-              <span>Curriculum updated with every regulatory change</span>
-            </div>
-          </div>
-          <div class="about-value">
-            <div class="about-value-icon">🤝</div>
-            <div class="about-value-text">
-              <strong>Dedicated Support</strong>
-              <span>Real humans ready to help your team succeed</span>
-            </div>
-          </div>
+    <div class="compliance-inner">
+      <div class="compliance-left">
+        <div class="section-tag">CQC &amp; Regulatory Alignment</div>
+        <h2>Built for UK Regulatory Standards</h2>
+        <p>Every lesson, every module, every certificate is designed to meet CQC inspection requirements, Skills for Care standards, and the Care Certificate framework — so you're always ready when the inspector calls.</p>
+        <div class="compliance-badges">
+          <div class="compliance-badge"><div class="compliance-badge-dot"></div>CQC Key Lines of Enquiry</div>
+          <div class="compliance-badge"><div class="compliance-badge-dot"></div>Skills for Care Endorsed</div>
+          <div class="compliance-badge"><div class="compliance-badge-dot"></div>Care Certificate (2015)</div>
+          <div class="compliance-badge"><div class="compliance-badge-dot"></div>UK GDPR Compliant</div>
+          <div class="compliance-badge"><div class="compliance-badge-dot"></div>Regulation 17 Audit Trail</div>
         </div>
       </div>
-      <div class="about-content">
-        <div class="section-tag">About Pearl Care Training</div>
-        <h2 class="section-title">Trusted by Care Providers Across the UK</h2>
-        <p>Pearl Care Training Academy was founded by experienced care professionals who saw a gap between what traditional training offered and what modern care workers actually needed: flexible, engaging, and truly meaningful education.</p>
-        <p>We combine deep sector expertise with the latest in AI-powered learning technology to deliver a platform that is as practical on the floor as it is impressive during a CQC inspection.</p>
-        <p>Our curriculum is authored by registered nurses, social workers, and care managers with decades of frontline and leadership experience in residential care, domiciliary care, and supported living.</p>
-        <div class="about-team-grid">
-          <div class="about-team-card">
-            <strong>Expert Curriculum</strong>
-            <span>Authored by RNs, social workers &amp; care managers</span>
-          </div>
-          <div class="about-team-card">
-            <strong>AI-Powered Delivery</strong>
-            <span>Avatar video + Claude AI Coach technology</span>
-          </div>
-          <div class="about-team-card">
-            <strong>Regulatory Expertise</strong>
-            <span>Built around CQC &amp; Skills for Care frameworks</span>
-          </div>
-          <div class="about-team-card">
-            <strong>Dedicated Support</strong>
-            <span>UK-based team, fast response times</span>
-          </div>
+      <div class="compliance-right">
+        <div class="compliance-stat-card">
+          <div class="compliance-stat-num">15</div>
+          <div class="compliance-stat-lbl">Care Certificate Standards</div>
+        </div>
+        <div class="compliance-stat-card">
+          <div class="compliance-stat-num">79</div>
+          <div class="compliance-stat-lbl">Expert Lessons</div>
+        </div>
+        <div class="compliance-stat-card">
+          <div class="compliance-stat-num">100%</div>
+          <div class="compliance-stat-lbl">Digital Certificates</div>
+        </div>
+        <div class="compliance-stat-card">
+          <div class="compliance-stat-num">8</div>
+          <div class="compliance-stat-lbl">Training Programmes</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════════════════════
-     PRICING
-════════════════════════════════════════════ -->
+<!-- ── PRICING ── -->
 <section class="section" id="pricing">
   <div class="container">
-    <div class="pricing-header">
+    <div class="section-header centered">
       <div class="section-tag">Simple, Transparent Pricing</div>
       <h2 class="section-title">Plans for Every Care Provider</h2>
       <p class="section-sub">No hidden fees. No per-certificate charges. All plans include access to the full lesson library and compliance tools.</p>
     </div>
     <div class="pricing-grid">
-
       <div class="pricing-card">
         <div class="pricing-card-head">
           <div class="pricing-plan-name">Starter</div>
           <div class="pricing-plan-desc">For small providers just getting started</div>
-          <div class="pricing-price">
-            <div class="pricing-amount">£49</div>
-            <div class="pricing-per">/ month</div>
-          </div>
+          <div style="margin-top:16px;"><div class="pricing-amount">£49</div><div class="pricing-per">/ month</div></div>
         </div>
         <div class="pricing-card-body">
           <ul class="pricing-features">
@@ -986,19 +585,15 @@
             <li class="na">Manager reporting suite</li>
             <li class="na">Dedicated account manager</li>
           </ul>
-          <a href="#contact" class="btn btn-secondary" style="width:100%; justify-content:center;">Get Started</a>
+          <a href="#contact" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
         </div>
       </div>
-
       <div class="pricing-card popular">
         <div class="pricing-card-head">
           <div class="pricing-popular-badge">Most Popular</div>
           <div class="pricing-plan-name">Professional</div>
           <div class="pricing-plan-desc">For growing care organisations</div>
-          <div class="pricing-price">
-            <div class="pricing-amount">£149</div>
-            <div class="pricing-per">/ month</div>
-          </div>
+          <div style="margin-top:16px;"><div class="pricing-amount">£149</div><div class="pricing-per">/ month</div></div>
         </div>
         <div class="pricing-card-body">
           <ul class="pricing-features">
@@ -1011,17 +606,14 @@
             <li>Manager reporting suite</li>
             <li class="na">Dedicated account manager</li>
           </ul>
-          <a href="#contact" class="btn btn-primary" style="width:100%; justify-content:center;">Get Started</a>
+          <a href="#contact" class="btn btn-gold" style="width:100%; justify-content:center;">Get Started</a>
         </div>
       </div>
-
       <div class="pricing-card">
         <div class="pricing-card-head">
           <div class="pricing-plan-name">Enterprise</div>
           <div class="pricing-plan-desc">For large providers and care groups</div>
-          <div class="pricing-price">
-            <div class="pricing-amount">Custom</div>
-          </div>
+          <div style="margin-top:16px;"><div class="pricing-amount">Custom</div></div>
         </div>
         <div class="pricing-card-body">
           <ul class="pricing-features">
@@ -1034,17 +626,60 @@
             <li>Manager reporting suite</li>
             <li>Dedicated account manager</li>
           </ul>
-          <a href="#contact" class="btn btn-secondary" style="width:100%; justify-content:center;">Contact Sales</a>
+          <a href="#contact" class="btn btn-outline" style="width:100%; justify-content:center;">Contact Sales</a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════════════════════
-     CONTACT
-════════════════════════════════════════════ -->
+<!-- ── ABOUT ── -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div>
+        <div class="about-visual-card">
+          <div class="about-visual-label">Our Mission</div>
+          <div class="about-visual-title">Empowering Care Professionals</div>
+          <div class="about-visual-sub">Knowledge, confidence, and the tools to deliver outstanding care — every shift, every day.</div>
+          <div class="about-values">
+            <div class="about-value">
+              <div class="about-value-icon">🌟</div>
+              <div class="about-value-text"><strong>Quality First</strong><span>Expert-authored, sector-reviewed content</span></div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">♿</div>
+              <div class="about-value-text"><strong>Accessible Learning</strong><span>Learn on any device, at any time</span></div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">🔄</div>
+              <div class="about-value-text"><strong>Always Current</strong><span>Curriculum updated with every regulatory change</span></div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">🤝</div>
+              <div class="about-value-text"><strong>Dedicated Support</strong><span>Real humans ready to help your team succeed</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-tag">About Pearl Care Training</div>
+        <h2 class="section-title">Trusted by Care Providers Across the UK</h2>
+        <p>Pearl Care Training Academy was founded by experienced care professionals who saw a gap between what traditional training offered and what modern care workers actually needed: flexible, engaging, and truly meaningful education.</p>
+        <p>We combine deep sector expertise with the latest in AI-powered learning technology to deliver a platform that is as practical on the floor as it is impressive during a CQC inspection.</p>
+        <p>Our curriculum is authored by registered nurses, social workers, and care managers with decades of frontline and leadership experience in residential care, domiciliary care, and supported living.</p>
+        <div class="about-team-grid">
+          <div class="about-team-card"><strong>Expert Curriculum</strong><span>Authored by RNs, social workers &amp; care managers</span></div>
+          <div class="about-team-card"><strong>AI-Powered Delivery</strong><span>Avatar video + Claude AI Coach technology</span></div>
+          <div class="about-team-card"><strong>Regulatory Expertise</strong><span>Built around CQC &amp; Skills for Care frameworks</span></div>
+          <div class="about-team-card"><strong>Dedicated Support</strong><span>UK-based team, fast response times</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
 <section class="section" id="contact">
   <div class="container">
     <div class="contact-inner">
@@ -1055,37 +690,25 @@
         <div class="contact-details">
           <div class="contact-detail">
             <div class="contact-detail-icon">🌐</div>
-            <div>
-              <strong>Website</strong>
-              <span>learn.pearlcaretraining.co.uk</span>
-            </div>
+            <div><strong>Website</strong><span>learn.pearlcaretraining.co.uk</span></div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-icon">📧</div>
-            <div>
-              <strong>Email</strong>
-              <span><a href="mailto:hello@pearlcaretraining.co.uk" style="color:inherit;">hello@pearlcaretraining.co.uk</a></span>
-            </div>
+            <div><strong>Email</strong><span><a href="mailto:hello@pearlcaretraining.co.uk" style="color:var(--teal);">hello@pearlcaretraining.co.uk</a></span></div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-icon">📍</div>
-            <div>
-              <strong>Location</strong>
-              <span>United Kingdom</span>
-            </div>
+            <div><strong>Location</strong><span>United Kingdom</span></div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-icon">⏰</div>
-            <div>
-              <strong>Support Hours</strong>
-              <span>Monday – Friday, 9am – 5pm GMT</span>
-            </div>
+            <div><strong>Support Hours</strong><span>Monday – Friday, 9am – 5pm GMT</span></div>
           </div>
         </div>
       </div>
-      <div class="contact-form">
+      <div class="contact-form-card">
         <h3>Send Us a Message</h3>
-        <div id="contact-success" style="display:none; background:#d1fae5; border:1px solid #6ee7b7; border-radius:12px; padding:24px; text-align:center;">
+        <div id="contact-success" style="display:none; background:var(--success-bg); border:1px solid #6ee7b7; border-radius:var(--radius); padding:24px; text-align:center;">
           <div style="font-size:32px; margin-bottom:12px;">✅</div>
           <strong style="display:block; color:#065f46; font-size:18px; margin-bottom:8px;">Message sent!</strong>
           <p style="color:#047857; margin:0;">We'll be in touch within one working day.</p>
@@ -1104,8 +727,8 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="jane@careservice.co.uk" required />
+            <label for="cemail">Email Address</label>
+            <input type="email" id="cemail" name="email" placeholder="jane@careservice.co.uk" required />
           </div>
           <div class="form-group">
             <label for="org">Organisation</label>
@@ -1126,15 +749,14 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Tell us about your care setting and training needs…"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:15px; font-size:16px;">Send Message &rarr;</button>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:13px; font-size:15px;">Send Message →</button>
         </form>
         <script>
           document.getElementById('contact-form').addEventListener('submit', async function(e) {
             e.preventDefault();
             const form = e.target;
-            const data = new FormData(form);
             try {
-              await fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(data).toString() });
+              await fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(new FormData(form)).toString() });
               form.style.display = 'none';
               document.getElementById('contact-success').style.display = 'block';
             } catch(err) {
@@ -1147,57 +769,15 @@
   </div>
 </section>
 
-<!-- ════════════════════════════════════════════
-     STAFF LOGIN CARD
-════════════════════════════════════════════ -->
-<section id="login">
-  <div class="container">
-    <div class="login-card">
-      <div class="login-card-icon">🔐</div>
-      <h2>Login</h2>
-      <p>Access your learning dashboard, continue your training, and download your certificates.</p>
-      <div class="login-form">
-        <div class="form-group">
-          <label for="login-email">Email Address</label>
-          <input type="email" id="login-email" placeholder="you@careservice.co.uk" />
-        </div>
-        <div class="form-group">
-          <label for="login-password">Password</label>
-          <input type="password" id="login-password" placeholder="••••••••" />
-        </div>
-        <button type="submit" class="btn btn-primary login-btn">Login to My Dashboard</button>
-      </div>
-      <div class="login-divider">or continue with</div>
-      <div class="login-sso">
-        <a href="#" class="btn">🏢 Microsoft SSO</a>
-        <a href="#" class="btn">🔑 Google SSO</a>
-      </div>
-      <p class="login-forgot">
-        Forgot your password? <a href="#">Reset it here</a><br>
-        <span style="margin-top:6px; display:block;">New to Pearl Care? <a href="#contact">Contact your manager</a></span>
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════
-     FOOTER
-════════════════════════════════════════════ -->
+<!-- ── FOOTER ── -->
 <footer>
   <div class="footer-top">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#" class="nav-logo">
-            <div class="nav-logo-icon">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
-            </div>
-            <div class="nav-logo-text">
-              <strong>Pearl Care Training</strong>
-              <span>Academy</span>
-            </div>
-          </a>
+          <img src="https://learn.pearlcaretraining.co.uk/Logo.png.png" alt="Pearl Care Training Academy" class="footer-logo" />
           <p>UK-leading care training LMS. 79 lessons, 8 programmes, AI-powered learning, and CQC compliance tools for care professionals.</p>
+          <div class="footer-cert"><div class="trust-dot"></div>CQC-Aligned Platform</div>
         </div>
         <div class="footer-col">
           <h4>Programmes</h4>
@@ -1220,7 +800,17 @@
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="/lms">Login</a></li>
+            <li><a href="https://learn.pearlcaretraining.co.uk">Staff Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Compliance</h4>
+          <ul>
+            <li><a href="#programmes">Care Certificate (2015)</a></li>
+            <li><a href="#programmes">CQC Key Lines of Enquiry</a></li>
+            <li><a href="#programmes">Skills for Care Standards</a></li>
+            <li><a href="#programmes">UK GDPR &amp; Data Protection</a></li>
+            <li><a href="#programmes">Regulation 17 Audit Trail</a></li>
           </ul>
         </div>
       </div>
@@ -1228,7 +818,7 @@
   </div>
   <div class="container">
     <div class="footer-bottom">
-      <p>&copy; 2026 Pearl Care Training Academy. All rights reserved. Registered in England &amp; Wales.</p>
+      <p>© 2026 Pearl Care Training Academy. All rights reserved. Registered in England &amp; Wales.</p>
       <div class="footer-bottom-links">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
@@ -1239,40 +829,6 @@
   </div>
 </footer>
 
-<script>
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
-    a.addEventListener('click', function(e) {
-      var target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
-  // Contact form submit handler (demo)
-  var contactBtn = document.querySelector('#contact button[type="submit"]');
-  if (contactBtn) {
-    contactBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.textContent = 'Message Sent! We\'ll be in touch shortly.';
-      this.style.background = '#16a34a';
-      this.disabled = true;
-    });
-  }
-
-  // Login form submit handler (demo)
-  var loginBtn = document.querySelector('.login-btn');
-  if (loginBtn) {
-    loginBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.textContent = 'Redirecting to dashboard…';
-      this.style.opacity = '0.7';
-    });
-  }
-</script>
-
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

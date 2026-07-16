@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pearl Care Training Academy: UK care training LMS. 83 lessons, 8 programmes, AI avatar video, Claude AI Coach, Pathway Passport, and CQC compliance tools for care professionals." />
+  <meta name="description" content="Pearl Care Training Academy: UK care training LMS. 100+ lessons, 9 programmes, AI avatar video, Care Mentor, Pathway Passport, and CQC compliance tools for care professionals." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0D2052" />
   <title>Pearl Care Training Academy | Care Training for Professionals</title>
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Pearl Care Training Academy" />
-  <meta property="og:description" content="UK-leading care training. 83 lessons, AI avatar video, Claude AI Coach, Pathway Passport, and CQC compliance tools." />
+  <meta property="og:description" content="UK-leading care training. 100+ lessons, AI avatar video, Care Mentor, Pathway Passport, and CQC compliance tools." />
   <meta property="og:site_name" content="Pearl Care Training Academy" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 88'%3E%3Crect width='80' height='88' rx='16' fill='%230D2052'/%3E%3Cellipse cx='40' cy='44' rx='30' ry='34' fill='none' stroke='%23C4912B' stroke-width='2'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,7 +63,6 @@
     .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
     .section { padding: 96px 0; }
 
-    /* Section tag */
     .section-tag {
       display: inline-flex; align-items: center; gap: 8px;
       font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em;
@@ -76,7 +75,6 @@
     .section-header.centered { text-align: center; }
     .section-header.centered .section-sub { margin: 0 auto; }
 
-    /* Buttons */
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 12px 24px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 600;
@@ -93,7 +91,6 @@
     .hero .btn-outline:hover { background: rgba(255,255,255,.12); color: white; border-color: rgba(255,255,255,.6); }
     .btn-lg { padding: 14px 32px; font-size: 15px; border-radius: var(--radius); }
 
-    /* ── NAV ── */
     .nav {
       position: sticky; top: 0; z-index: 100;
       background: var(--nav-bg);
@@ -120,7 +117,6 @@
       .nav-toggle { display: block; }
     }
 
-    /* ── HERO ── */
     .hero { background: var(--nav-bg); padding: 88px 0 72px; border-bottom: 1px solid rgba(255,255,255,.06); }
     .hero-inner { display: grid; grid-template-columns: 1fr 400px; gap: 64px; align-items: center; }
     .hero-badge {
@@ -135,7 +131,6 @@
     .hero-sub { font-size: 17px; color: rgba(255,255,255,.65); line-height: 1.75; margin-bottom: 40px; max-width: 500px; }
     .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 
-    /* Hero card (mirrors LMS dashboard card) */
     .hero-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); overflow: hidden; }
     .hero-card-header { background: var(--nav-bg); padding: 20px 24px 18px; }
     .hero-card-header-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.45); margin-bottom: 5px; font-family: 'Inter', sans-serif; }
@@ -152,13 +147,11 @@
 
     @media (max-width: 940px) { .hero-inner { grid-template-columns: 1fr; } .hero-card { display: none; } }
 
-    /* ── TRUST BAR ── */
     .trust-bar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 18px 0; }
     .trust-bar-inner { display: flex; gap: 32px; align-items: center; justify-content: center; flex-wrap: wrap; }
     .trust-item { display: flex; align-items: center; gap: 9px; font-size: 13px; font-weight: 600; color: var(--text-2); }
     .trust-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--success); flex-shrink: 0; }
 
-    /* ── STATS ── */
     .stats-bar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 56px 0; }
     .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
     @media (max-width: 640px) { .stats-grid { grid-template-columns: repeat(2,1fr); } }
@@ -166,7 +159,6 @@
     .stat-number { font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 700; color: var(--navy); line-height: 1; margin-bottom: 6px; }
     .stat-label { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; }
 
-    /* ── PROGRAMMES ── */
     #programmes { background: var(--bg); }
     .programmes-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
     @media (max-width: 1024px) { .programmes-grid { grid-template-columns: repeat(2,1fr); } }
@@ -184,7 +176,6 @@
     .prog-lessons { font-size: 11px; font-weight: 700; color: var(--gold); background: var(--gold-dim); padding: 3px 10px; border-radius: 100px; }
     .prog-cert { font-size: 11px; font-weight: 600; color: var(--success); background: var(--success-bg); padding: 3px 10px; border-radius: 100px; }
 
-    /* ── FEATURES ── */
     #features { background: var(--surface); }
     .features-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 22px; }
     @media (max-width: 640px) { .features-grid { grid-template-columns: 1fr; } }
@@ -199,7 +190,6 @@
     .feature-list li { font-size: 13px; color: var(--text-2); padding-left: 20px; position: relative; }
     .feature-list li::before { content: ''; position: absolute; left: 0; top: 7px; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
 
-    /* ── COMPLIANCE (dark) ── */
     .compliance-section { background: var(--nav-bg); padding: 88px 0; }
     .compliance-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
     @media (max-width: 768px) { .compliance-inner { grid-template-columns: 1fr; gap: 48px; } }
@@ -214,7 +204,6 @@
     .compliance-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 44px; font-weight: 700; color: var(--gold-bright); line-height: 1; margin-bottom: 8px; }
     .compliance-stat-lbl { font-size: 12px; color: rgba(255,255,255,.55); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
 
-    /* ── PRICING ── */
     #pricing { background: var(--surface-2); }
     .pricing-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; align-items: start; }
     @media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; } }
@@ -243,7 +232,6 @@
     .pricing-card.popular .pricing-features li.na { color: rgba(255,255,255,.3); }
     .pricing-card.popular .pricing-features li.na::before { color: rgba(255,255,255,.2); }
 
-    /* ── ABOUT ── */
     #about { background: var(--bg); }
     .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
     @media (max-width: 800px) { .about-inner { grid-template-columns: 1fr; gap: 48px; } }
@@ -262,7 +250,6 @@
     .about-team-card strong { display: block; font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
     .about-team-card span { font-size: 12px; color: var(--muted); }
 
-    /* ── CONTACT ── */
     #contact { background: var(--surface); }
     .contact-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 72px; align-items: start; }
     @media (max-width: 900px) { .contact-inner { grid-template-columns: 1fr; gap: 48px; } }
@@ -288,7 +275,6 @@
     }
     .form-group textarea { min-height: 100px; resize: vertical; }
 
-    /* ── FOOTER ── */
     footer { background: var(--nav-bg); color: rgba(255,255,255,.6); }
     .footer-top { padding: 64px 0 48px; }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap: 48px; }
@@ -312,7 +298,6 @@
 </head>
 <body>
 
-<!-- ── NAV ── -->
 <nav class="nav">
   <div class="nav-inner">
     <a href="#home"><img src="https://learn.pearlcaretraining.co.uk/Logo.png.png" alt="Pearl Care Training Academy" class="nav-logo-img" /></a>
@@ -330,14 +315,13 @@
   </div>
 </nav>
 
-<!-- ── HERO ── -->
 <section class="hero" id="home">
   <div class="container">
     <div class="hero-inner">
       <div class="hero-content">
         <div class="hero-badge">CQC-Aligned Training Platform</div>
         <h1>Train Smarter.<br>Care <span class="accent">Better.</span><br>Stay Compliant.</h1>
-        <p class="hero-sub">Pearl Care Training Academy delivers UK-leading care education: 83 expert lessons, AI avatar video content, an intelligent Claude AI Coach, a Pathway Passport to track career progression, and CQC compliance tools built for care professionals.</p>
+        <p class="hero-sub">Pearl Care Training Academy delivers UK-leading care education: over 100 expert lessons, AI avatar video content, an intelligent Care Mentor, a Pathway Passport to track career progression, and CQC compliance tools built for care professionals.</p>
         <div class="hero-ctas">
           <a href="#programmes" class="btn btn-primary btn-lg">Explore Programmes</a>
           <a href="https://learn.pearlcaretraining.co.uk" class="btn btn-outline btn-lg">Login →</a>
@@ -352,11 +336,11 @@
           <div class="hero-card-body">
             <div class="hero-stats">
               <div class="hero-stat">
-                <div class="hero-stat-num">83</div>
+                <div class="hero-stat-num">100+</div>
                 <div class="hero-stat-lbl">Lessons</div>
               </div>
               <div class="hero-stat">
-                <div class="hero-stat-num">8</div>
+                <div class="hero-stat-num">9</div>
                 <div class="hero-stat-lbl">Programmes</div>
               </div>
               <div class="hero-stat">
@@ -366,7 +350,7 @@
             </div>
             <div class="hero-features">
               <div class="hero-feature"><div class="hero-feature-icon">🎥</div><div class="hero-feature-text">AI Avatar Video Lessons</div></div>
-              <div class="hero-feature"><div class="hero-feature-icon">🤖</div><div class="hero-feature-text">Claude AI Coach, 24/7</div></div>
+              <div class="hero-feature"><div class="hero-feature-icon">🤖</div><div class="hero-feature-text">Care Mentor, 24/7</div></div>
               <div class="hero-feature"><div class="hero-feature-icon">✅</div><div class="hero-feature-text">CQC Compliance Tracking</div></div>
               <div class="hero-feature"><div class="hero-feature-icon">📜</div><div class="hero-feature-text">Instant Certificates</div></div>
               <div class="hero-feature"><div class="hero-feature-icon">🪪</div><div class="hero-feature-text">Pathway Passport</div></div>
@@ -378,7 +362,6 @@
   </div>
 </section>
 
-<!-- ── TRUST BAR ── -->
 <section class="trust-bar">
   <div class="container">
     <div class="trust-bar-inner">
@@ -390,23 +373,21 @@
   </div>
 </section>
 
-<!-- ── STATS ── -->
 <section class="stats-bar">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat-item"><div class="stat-number">83</div><div class="stat-label">Expert Lessons</div></div>
-      <div class="stat-item"><div class="stat-number">8</div><div class="stat-label">Programmes</div></div>
+      <div class="stat-item"><div class="stat-number">100+</div><div class="stat-label">Expert Lessons</div></div>
+      <div class="stat-item"><div class="stat-number">9</div><div class="stat-label">Programmes</div></div>
       <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Care Certificate</div></div>
-      <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">AI Coach Access</div></div>
+      <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Care Mentor Access</div></div>
     </div>
   </div>
 </section>
 
-<!-- ── PROGRAMMES ── -->
 <section class="section" id="programmes">
   <div class="container">
     <div class="section-header">
-      <div class="section-tag">8 Training Programmes</div>
+      <div class="section-tag">9 Training Programmes</div>
       <h2 class="section-title">Everything Your Team Needs to Excel</h2>
       <p class="section-sub">Structured learning pathways from first-day induction through to advanced care management, all aligned to UK regulatory standards.</p>
     </div>
@@ -459,10 +440,16 @@
         <div class="prog-desc">Mental health conditions, learning disabilities, autism support, substance misuse awareness, de-escalation, and staff wellbeing and resilience.</div>
         <div class="prog-meta"><span class="prog-lessons">10 Lessons</span><span class="prog-cert">Intermediate</span></div>
       </div>
+      <div class="prog-card">
+        <div class="prog-icon">💊</div>
+        <div class="prog-title">Medicines Management</div>
+        <div class="prog-desc">Safe medicines administration, storage, and error reporting — covering controlled drugs, PRN protocols, covert administration, and the legal responsibilities of care workers.</div>
+        <div class="prog-meta"><span class="prog-lessons">9 Lessons</span><span class="prog-cert">Advanced</span></div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- ── FEATURES ── -->
 <section class="section" id="features">
   <div class="container">
     <div class="section-header centered">
@@ -490,15 +477,15 @@
       <div class="feature-card">
         <div class="feature-card-top">
           <div class="feature-card-icon">🤖</div>
-          <div class="feature-card-title">Claude AI Coach</div>
+          <div class="feature-card-title">Pearl Care Mentor</div>
         </div>
         <div class="feature-card-body">
-          <p class="feature-card-desc">Powered by Anthropic's Claude, your personal AI tutor answers questions, explains concepts, and supports learning around the clock.</p>
+          <p class="feature-card-desc">Your AI-powered learning companion — ask questions, practise real-world care scenarios, and receive personalised feedback across 6 professional competencies, available 24/7.</p>
           <ul class="feature-list">
             <li>Instant answers to care-related questions</li>
-            <li>Personalised learning guidance</li>
+            <li>Real-world scenario practice with timed responses</li>
+            <li>Personalised feedback across 6 competencies</li>
             <li>Safe to ask, no judgement, no waiting</li>
-            <li>Scenario-based practice conversations</li>
             <li>Multilingual support for diverse teams</li>
           </ul>
         </div>
@@ -518,6 +505,7 @@
             <li>Aligned to CQC Key Lines of Enquiry (KLOEs)</li>
           </ul>
         </div>
+      </div>
       <div class="feature-card">
         <div class="feature-card-top">
           <div class="feature-card-icon">🪪</div>
@@ -526,7 +514,7 @@
         <div class="feature-card-body">
           <p class="feature-card-desc">A digital skills passport that records every completed pathway — giving learners a verified, shareable record of their career progression in care.</p>
           <ul class="feature-list">
-            <li>Tracks progress across all 8 programmes</li>
+            <li>Tracks progress across all 9 programmes</li>
             <li>Visual career ladder from induction to leadership</li>
             <li>Printable and shareable credential</li>
             <li>Evidence of CPD for CQC inspections</li>
@@ -538,7 +526,6 @@
   </div>
 </section>
 
-<!-- ── COMPLIANCE SECTION (dark) ── -->
 <section class="compliance-section">
   <div class="container">
     <div class="compliance-inner">
@@ -560,7 +547,7 @@
           <div class="compliance-stat-lbl">Care Certificate Standards</div>
         </div>
         <div class="compliance-stat-card">
-          <div class="compliance-stat-num">83</div>
+          <div class="compliance-stat-num">100+</div>
           <div class="compliance-stat-lbl">Expert Lessons</div>
         </div>
         <div class="compliance-stat-card">
@@ -568,7 +555,7 @@
           <div class="compliance-stat-lbl">Digital Certificates</div>
         </div>
         <div class="compliance-stat-card">
-          <div class="compliance-stat-num">8</div>
+          <div class="compliance-stat-num">9</div>
           <div class="compliance-stat-lbl">Training Programmes</div>
         </div>
       </div>
@@ -576,7 +563,6 @@
   </div>
 </section>
 
-<!-- ── PRICING ── -->
 <section class="section" id="pricing">
   <div class="container">
     <div class="section-header centered">
@@ -594,12 +580,12 @@
         <div class="pricing-card-body">
           <ul class="pricing-features">
             <li>Up to 10 staff learners</li>
-            <li>All 83 lessons</li>
-            <li>All 8 programmes</li>
+            <li>100+ expert lessons</li>
+            <li>All 9 programmes</li>
             <li>Digital certificates</li>
             <li>Pathway Passport</li>
             <li>Basic compliance dashboard</li>
-            <li class="na">AI Coach access</li>
+            <li class="na">Care Mentor access</li>
             <li class="na">Manager reporting suite</li>
             <li class="na">Dedicated account manager</li>
           </ul>
@@ -616,12 +602,12 @@
         <div class="pricing-card-body">
           <ul class="pricing-features">
             <li>Up to 50 staff learners</li>
-            <li>All 83 lessons</li>
-            <li>All 8 programmes</li>
+            <li>100+ expert lessons</li>
+            <li>All 9 programmes</li>
             <li>Digital certificates</li>
             <li>Pathway Passport</li>
             <li>Full compliance dashboard</li>
-            <li>Claude AI Coach (unlimited)</li>
+            <li>Care Mentor (unlimited)</li>
             <li>Manager reporting suite</li>
             <li class="na">Dedicated account manager</li>
           </ul>
@@ -637,12 +623,12 @@
         <div class="pricing-card-body">
           <ul class="pricing-features">
             <li>Unlimited staff learners</li>
-            <li>All 83 lessons</li>
-            <li>All 8 programmes</li>
+            <li>100+ expert lessons</li>
+            <li>All 9 programmes</li>
             <li>Digital certificates</li>
             <li>Pathway Passport</li>
             <li>Full compliance dashboard</li>
-            <li>Claude AI Coach (unlimited)</li>
+            <li>Care Mentor (unlimited)</li>
             <li>Manager reporting suite</li>
             <li>Dedicated account manager</li>
           </ul>
@@ -653,7 +639,6 @@
   </div>
 </section>
 
-<!-- ── ABOUT ── -->
 <section class="section" id="about">
   <div class="container">
     <div class="about-inner">
@@ -690,7 +675,7 @@
         <p>Our curriculum is authored by registered nurses, social workers, and care managers with decades of frontline and leadership experience in residential care, domiciliary care, and supported living.</p>
         <div class="about-team-grid">
           <div class="about-team-card"><strong>Expert Curriculum</strong><span>Authored by RNs, social workers &amp; care managers</span></div>
-          <div class="about-team-card"><strong>AI-Powered Delivery</strong><span>Avatar video + Claude AI Coach technology</span></div>
+          <div class="about-team-card"><strong>AI-Powered Delivery</strong><span>Avatar video + Care Mentor technology</span></div>
           <div class="about-team-card"><strong>Regulatory Expertise</strong><span>Built around CQC &amp; Skills for Care frameworks</span></div>
           <div class="about-team-card"><strong>Dedicated Support</strong><span>UK-based team, fast response times</span></div>
         </div>
@@ -699,7 +684,6 @@
   </div>
 </section>
 
-<!-- ── CONTACT ── -->
 <section class="section" id="contact">
   <div class="container">
     <div class="contact-inner">
@@ -789,14 +773,13 @@
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
 <footer>
   <div class="footer-top">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="https://learn.pearlcaretraining.co.uk/Logo.png.png" alt="Pearl Care Training Academy" class="footer-logo" />
-          <p>UK-leading care training LMS. 83 lessons, 8 programmes, AI-powered learning, and CQC compliance tools for care professionals.</p>
+          <p>UK-leading care training LMS. 100+ lessons, 9 programmes, AI-powered learning, and CQC compliance tools for care professionals.</p>
           <div class="footer-cert"><div class="trust-dot"></div>CQC-Aligned Platform</div>
         </div>
         <div class="footer-col">
@@ -816,7 +799,7 @@
           <ul>
             <li><a href="#features">AI Avatar Video</a></li>
             <li><a href="#features">Pathway Passport</a></li>
-            <li><a href="#features">Claude AI Coach</a></li>
+            <li><a href="#features">Care Mentor</a></li>
             <li><a href="#features">CQC Compliance Tools</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#about">About Us</a></li>
@@ -852,4 +835,3 @@
 
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

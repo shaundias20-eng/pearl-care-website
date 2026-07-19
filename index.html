@@ -130,6 +130,8 @@
       background: rgba(196,145,43,.18); margin-bottom: 24px; font-family: 'Inter', sans-serif;
     }
     .hero-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold-bright); flex-shrink: 0; }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+    .hero-badges .hero-badge { margin-bottom: 0; }
     .hero h1 { margin-bottom: 22px; color: white; }
     .hero h1 .accent { color: var(--gold-bright); }
     .hero-sub { font-size: 17px; color: rgba(255,255,255,.65); line-height: 1.75; margin-bottom: 40px; max-width: 500px; }
@@ -308,6 +310,13 @@
     .footer-bottom-links a:hover { color: white; }
 
     @media (max-width: 560px) { .footer-bottom { flex-direction: column; text-align: center; } }
+    .btn-block { width: 100%; justify-content: center; }
+    .pricing-price { margin-top: 16px; }
+
+    /* ── CPD ACCREDITATION ── */
+    .cpd-accreditation { background: var(--surface); padding: 0 0 56px; text-align: center; }
+    .cpd-logo { height: 92px; width: auto; margin: 0 auto 12px; display: block; }
+    .cpd-accreditation p { font-size: 13px; color: var(--muted); max-width: 460px; margin: 0 auto; }
   </style>
 </head>
 <body>
@@ -335,9 +344,12 @@
   <div class="container">
     <div class="hero-inner">
       <div class="hero-content">
-        <div class="hero-badge">CQC-Aligned Training Platform</div>
+        <div class="hero-badges">
+          <div class="hero-badge">CQC-Aligned Training Platform</div>
+          <div class="hero-badge">SAFE-Aligned Training Platform</div>
+        </div>
         <h1>Train Smarter.<br>Care <span class="accent">Better.</span><br>Stay Compliant.</h1>
-        <p class="hero-sub">Pearl Care Training Academy delivers UK-leading care education: over 100 expert lessons, AI avatar video content, an intelligent Care Mentor, a Pathway Passport to track career progression, and CQC compliance tools built for care professionals.</p>
+        <p class="hero-sub">Pearl Care Training Academy delivers UK-leading CPD Accredited care education: over 100 expert lessons, AI avatar video content, an intelligent Care Mentor, a Pathway Passport to track career progression, and CQC compliance tools built for care professionals.</p>
         <div class="hero-ctas">
           <a href="#programmes" class="btn btn-primary btn-lg">Explore Programmes</a>
           <a href="https://learn.pearlcaretraining.co.uk" class="btn btn-outline btn-lg">Login →</a>
@@ -522,7 +534,7 @@
             <li>Automatic certificate generation and storage</li>
             <li>Email alerts for expiring training</li>
             <li>Manager reporting and audit trail</li>
-            <li>Aligned to CQC Key Lines of Enquiry (KLOEs)</li>
+            <li>Aligned to CQC’s Single Assessment Framework</li>
           </ul>
         </div>
       </div>
@@ -555,7 +567,8 @@
         <h2>Built for UK Regulatory Standards</h2>
         <p>Every lesson, every module, every certificate is designed to meet CQC inspection requirements, Skills for Care standards, and the Care Certificate framework — so you're always ready when the inspector calls.</p>
         <div class="compliance-badges">
-          <div class="compliance-badge"><div class="compliance-badge-dot"></div>CQC Key Lines of Enquiry</div>
+          <div class="compliance-badge"><div class="compliance-badge-dot"></div>CQC Single Assessment Framework</div>
+          <div class="compliance-badge"><div class="compliance-badge-dot"></div>CPD Accredited</div>
           <div class="compliance-badge"><div class="compliance-badge-dot"></div>Skills for Care Endorsed</div>
           <div class="compliance-badge"><div class="compliance-badge-dot"></div>Care Certificate (2015)</div>
           <div class="compliance-badge"><div class="compliance-badge-dot"></div>UK GDPR Compliant</div>
@@ -597,7 +610,7 @@
         <div class="pricing-card-head">
           <div class="pricing-plan-name">Starter</div>
           <div class="pricing-plan-desc">For small providers just getting started</div>
-          <div style="margin-top:16px;"><div class="pricing-amount">£49</div><div class="pricing-per">/ month</div></div>
+          <div class="pricing-price"><div class="pricing-amount">£49</div><div class="pricing-per">/ month</div></div>
         </div>
         <div class="pricing-card-body">
           <ul class="pricing-features">
@@ -611,7 +624,7 @@
             <li class="na">Manager reporting suite</li>
             <li class="na">Dedicated account manager</li>
           </ul>
-          <a href="#contact" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
+          <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
         </div>
       </div>
       <div class="pricing-card popular">
@@ -619,7 +632,7 @@
           <div class="pricing-popular-badge">Most Popular</div>
           <div class="pricing-plan-name">Professional</div>
           <div class="pricing-plan-desc">For growing care organisations</div>
-          <div style="margin-top:16px;"><div class="pricing-amount">£149</div><div class="pricing-per">/ month</div></div>
+          <div class="pricing-price"><div class="pricing-amount">£149</div><div class="pricing-per">/ month</div></div>
         </div>
         <div class="pricing-card-body">
           <ul class="pricing-features">
@@ -633,14 +646,14 @@
             <li>Manager reporting suite</li>
             <li class="na">Dedicated account manager</li>
           </ul>
-          <a href="#contact" class="btn btn-gold" style="width:100%; justify-content:center;">Get Started</a>
+          <a href="#contact" class="btn btn-gold btn-block">Get Started</a>
         </div>
       </div>
       <div class="pricing-card">
         <div class="pricing-card-head">
           <div class="pricing-plan-name">Enterprise</div>
           <div class="pricing-plan-desc">For large providers and care groups</div>
-          <div style="margin-top:16px;"><div class="pricing-amount">Custom</div></div>
+          <div class="pricing-price"><div class="pricing-amount">Custom</div></div>
         </div>
         <div class="pricing-card-body">
           <ul class="pricing-features">
@@ -654,7 +667,7 @@
             <li>Manager reporting suite</li>
             <li>Dedicated account manager</li>
           </ul>
-          <a href="#contact" class="btn btn-outline" style="width:100%; justify-content:center;">Contact Sales</a>
+          <a href="#contact" class="btn btn-outline btn-block">Contact Sales</a>
         </div>
       </div>
     </div>
@@ -777,7 +790,7 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Tell us about your care setting and training needs…"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:13px; font-size:15px;">Send Message →</button>
+          <button type="submit" class="btn btn-primary btn-block" style="padding:13px; font-size:15px;">Send Message →</button>
         </form>
         <script>
           document.getElementById('contact-form').addEventListener('submit', async function(e) {
@@ -794,6 +807,14 @@
         </script>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ── CPD ACCREDITATION ── -->
+<section class="cpd-accreditation">
+  <div class="container">
+    <img src="data:image/webp;base64,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" alt="CPD Member — The CPD Certification Service" class="cpd-logo" />
+    <p>Pearl Care Training Academy is CPD Accredited by The CPD Certification Service.</p>
   </div>
 </section>
 
@@ -836,7 +857,7 @@
           <h4>Compliance</h4>
           <ul>
             <li><a href="#programmes">Care Certificate (2015)</a></li>
-            <li><a href="#programmes">CQC Key Lines of Enquiry</a></li>
+            <li><a href="#programmes">CQC Single Assessment Framework</a></li>
             <li><a href="#programmes">Skills for Care Standards</a></li>
             <li><a href="#programmes">UK GDPR &amp; Data Protection</a></li>
             <li><a href="#programmes">Regulation 17 Audit Trail</a></li>

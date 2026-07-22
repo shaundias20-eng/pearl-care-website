@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pearl Care Training Academy: UK care training LMS. 100+ lessons, 9 programmes, AI avatar video, Care Mentor, Pathway Passport, and CQC compliance tools for care professionals." />
+  <meta name="description" content="Pearl Care Training Academy: UK care training LMS. 100+ lessons, 9 programmes, AI avatar video, Care Mentor, Care Passport, and CQC compliance tools for care professionals." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0D2052" />
   <title>Pearl Care Training Academy | Care Training for Professionals</title>
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Pearl Care Training Academy" />
-  <meta property="og:description" content="UK-leading care training. 100+ lessons, AI avatar video, Care Mentor, Pathway Passport, and CQC compliance tools." />
+  <meta property="og:description" content="UK-leading care training. 100+ lessons, AI avatar video, Care Mentor, Care Passport, and CQC compliance tools." />
   <meta property="og:site_name" content="Pearl Care Training Academy" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 88'%3E%3Crect width='80' height='88' rx='16' fill='%230D2052'/%3E%3Cellipse cx='40' cy='44' rx='30' ry='34' fill='none' stroke='%23C4912B' stroke-width='2'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -319,6 +319,80 @@
     .cpd-logo { height: 92px; width: auto; margin: 0 auto 12px; display: block; }
     .cpd-accreditation p { font-size: 13px; color: var(--muted); max-width: 460px; margin: 0 auto; }
   </style>
+<style id="pearl-pricing-css">
+  /* ---- scoped to .pc-pricing so it won't collide with existing site CSS ---- */
+  .pc-pricing{
+    --pc-navy:#0D2052; --pc-navy-deep:#0A1A45; --pc-navy-soft:#1A3470;
+    --pc-gold:#C4912B; --pc-gold-soft:#E7D3A1;
+    --pc-ink:#1B2A57; --pc-body:#4A5678; --pc-muted:#8A93AD;
+    --pc-bg:#F7FAFF; --pc-card:#FFFFFF; --pc-line:#E4E7EF;
+    --pc-green:#059669; --pc-dash:#B8BFCF;
+    background:var(--pc-bg);
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--pc-ink);
+    padding:64px 20px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .pc-pricing *{box-sizing:border-box;margin:0;padding:0}
+  .pc-inner{max-width:1180px;margin:0 auto}
+
+  .pc-head{text-align:center;margin-bottom:34px}
+  .pc-eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--pc-gold);font-weight:700}
+  .pc-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:38px;font-weight:700;color:var(--pc-navy);margin-top:8px}
+  .pc-head p{font-size:15px;color:var(--pc-body);margin-top:10px;max-width:640px;margin-left:auto;margin-right:auto;line-height:1.5}
+
+  /* ---- billing toggle ---- */
+  .pc-toggle{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--pc-line);
+    border-radius:999px;padding:5px;margin:22px auto 0;box-shadow:0 4px 14px rgba(27,42,87,.06)}
+  .pc-toggle button{font-family:inherit;font-size:14px;font-weight:600;border:none;background:none;cursor:pointer;
+    color:var(--pc-body);padding:9px 18px;border-radius:999px;transition:.18s}
+  .pc-toggle button[aria-pressed="true"]{background:var(--pc-navy);color:#fff}
+  .pc-save{display:inline-block;margin-left:8px;font-size:11.5px;font-weight:700;color:var(--pc-green);
+    background:#E9F4EF;border-radius:999px;padding:3px 9px;vertical-align:middle}
+
+  /* ---- cards grid ---- */
+  .pc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px;align-items:stretch}
+  @media(max-width:1024px){.pc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:640px){.pc-grid{grid-template-columns:1fr}}
+
+  .pc-card{background:var(--pc-card);border:1px solid var(--pc-line);border-radius:18px;padding:26px 22px;
+    display:flex;flex-direction:column;position:relative;box-shadow:0 8px 26px rgba(27,42,87,.07)}
+  .pc-card.pc-pop{background:var(--pc-navy);border-color:var(--pc-navy);box-shadow:0 18px 40px rgba(27,42,87,.3)}
+  .pc-card.pc-pop .pc-name,.pc-card.pc-pop .pc-price .pc-amt,.pc-card.pc-pop li{color:#fff}
+  .pc-card.pc-pop .pc-tag,.pc-card.pc-pop .pc-price .pc-per,.pc-card.pc-pop .pc-band{color:var(--pc-gold-soft)}
+
+  .pc-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);white-space:nowrap;
+    background:var(--pc-gold);color:var(--pc-navy-deep);font-size:11px;font-weight:700;letter-spacing:1.2px;
+    text-transform:uppercase;padding:5px 14px;border-radius:999px}
+  .pc-badge.pc-new{background:var(--pc-green);color:#fff}
+
+  .pc-name{font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:700;color:var(--pc-navy)}
+  .pc-tag{font-size:12.5px;color:var(--pc-muted);margin-top:4px;min-height:34px;line-height:1.35}
+  .pc-price{margin-top:16px;display:flex;align-items:baseline;gap:5px;min-height:52px}
+  .pc-price .pc-amt{font-family:'Cormorant Garamond',Georgia,serif;font-size:42px;font-weight:700;color:var(--pc-navy)}
+  .pc-price .pc-per{font-size:13px;color:var(--pc-muted)}
+  .pc-price .pc-amt.pc-custom{font-size:32px}
+  .pc-band{margin-top:2px;font-size:12.5px;color:var(--pc-gold);font-weight:600}
+
+  .pc-card ul{list-style:none;margin-top:20px;flex:1}
+  .pc-card li{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--pc-body);
+    padding:6px 0;line-height:1.4}
+  .pc-card li svg{flex:0 0 auto;width:16px;height:16px;margin-top:1px}
+  .pc-card li.pc-off{color:var(--pc-muted)}
+  .pc-card.pc-pop li{color:#D7DEEE}
+  .pc-card.pc-pop li.pc-off{color:#7C88A8}
+  .pc-card li b{font-weight:600;color:var(--pc-ink)}
+  .pc-card.pc-pop li b{color:#fff}
+
+  .pc-cta{margin-top:22px;text-align:center;padding:13px;border-radius:11px;font-weight:600;font-size:14.5px;
+    text-decoration:none;border:1.5px solid var(--pc-gold);color:var(--pc-gold);transition:.18s;display:block}
+  .pc-cta:hover{background:var(--pc-gold);color:var(--pc-navy-deep)}
+  .pc-cta.pc-solid{background:var(--pc-gold);color:var(--pc-navy-deep)}
+  .pc-cta.pc-solid:hover{background:var(--pc-gold-soft)}
+  .pc-card.pc-pop .pc-cta{border-color:var(--pc-gold)}
+
+  .pc-foot{text-align:center;font-size:12px;color:var(--pc-muted);margin-top:26px;line-height:1.5}
+</style>
 </head>
 <body>
 
@@ -351,7 +425,7 @@
           <div class="hero-badge">NICE-Aligned Training Platform</div>
         </div>
         <h1>Train Smarter.<br>Care <span class="accent">Better.</span><br>Stay Compliant.</h1>
-        <p class="hero-sub">Pearl Care Training Academy delivers UK-leading CPD Accredited care education: over 100 expert lessons, AI avatar video content, an intelligent Care Mentor, a Pathway Passport to track career progression, and CQC compliance tools built for care professionals.</p>
+        <p class="hero-sub">Pearl Care Training Academy delivers UK-leading CPD Accredited care education: over 100 expert lessons, AI avatar video content, an intelligent Care Mentor, a Care Passport to track career progression, and CQC compliance tools built for care professionals.</p>
         <div class="hero-ctas">
           <a href="#programmes" class="btn btn-primary btn-lg">Explore Programmes</a>
           <a href="https://learn.pearlcaretraining.co.uk" class="btn btn-outline btn-lg">Login →</a>
@@ -383,7 +457,7 @@
               <div class="hero-feature"><div class="hero-feature-icon">🤖</div><div class="hero-feature-text">Care Mentor, 24/7</div></div>
               <div class="hero-feature"><div class="hero-feature-icon">✅</div><div class="hero-feature-text">CQC Compliance Tracking</div></div>
               <div class="hero-feature"><div class="hero-feature-icon">📜</div><div class="hero-feature-text">Instant Certificates</div></div>
-              <div class="hero-feature"><div class="hero-feature-icon">🪪</div><div class="hero-feature-text">Pathway Passport</div></div>
+              <div class="hero-feature"><div class="hero-feature-icon">🪪</div><div class="hero-feature-text">Care Passport</div></div>
             </div>
           </div>
         </div>
@@ -543,7 +617,7 @@
       <div class="feature-card">
         <div class="feature-card-top">
           <div class="feature-card-icon">🪪</div>
-          <div class="feature-card-title">Pathway Passport</div>
+          <div class="feature-card-title">Care Passport</div>
         </div>
         <div class="feature-card-body">
           <p class="feature-card-desc">A digital skills passport that records every completed pathway, giving learners a verified, shareable record of their career progression in care.</p>
@@ -649,81 +723,109 @@
 </section>
 
 <!-- ── PRICING ── -->
-<section class="section" id="pricing">
-  <div class="container">
-    <div class="section-header centered">
-      <div class="section-tag">Simple, Transparent Pricing</div>
-      <h2 class="section-title">Plans for Every Care Provider</h2>
-      <p class="section-sub">No hidden fees. No per-certificate charges. All plans include access to the full lesson library and compliance tools.</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <div class="pricing-card-head">
-          <div class="pricing-plan-name">Starter</div>
-          <div class="pricing-plan-desc">For small providers just getting started</div>
-          <div class="pricing-price"><div class="pricing-amount">£49</div><div class="pricing-per">/ month</div></div>
-        </div>
-        <div class="pricing-card-body">
-          <ul class="pricing-features">
-            <li>Up to 10 staff learners</li>
-            <li>100+ expert lessons</li>
-            <li>All 9 programmes</li>
-            <li>Digital certificates</li>
-            <li>Pathway Passport</li>
-            <li>Basic compliance dashboard</li>
-            <li class="na">Care Mentor access</li>
-            <li class="na">Manager reporting suite</li>
-            <li class="na">Dedicated account manager</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
-        </div>
-      </div>
-      <div class="pricing-card popular">
-        <div class="pricing-card-head">
-          <div class="pricing-popular-badge">Most Popular</div>
-          <div class="pricing-plan-name">Professional</div>
-          <div class="pricing-plan-desc">For growing care organisations</div>
-          <div class="pricing-price"><div class="pricing-amount">£149</div><div class="pricing-per">/ month</div></div>
-        </div>
-        <div class="pricing-card-body">
-          <ul class="pricing-features">
-            <li>Up to 50 staff learners</li>
-            <li>100+ expert lessons</li>
-            <li>All 9 programmes</li>
-            <li>Digital certificates</li>
-            <li>Pathway Passport</li>
-            <li>Full compliance dashboard</li>
-            <li>Care Mentor (unlimited)</li>
-            <li>Manager reporting suite</li>
-            <li class="na">Dedicated account manager</li>
-          </ul>
-          <a href="#contact" class="btn btn-gold btn-block">Get Started</a>
-        </div>
-      </div>
-      <div class="pricing-card">
-        <div class="pricing-card-head">
-          <div class="pricing-plan-name">Enterprise</div>
-          <div class="pricing-plan-desc">For large providers and care groups</div>
-          <div class="pricing-price"><div class="pricing-amount">Custom</div></div>
-        </div>
-        <div class="pricing-card-body">
-          <ul class="pricing-features">
-            <li>Unlimited staff learners</li>
-            <li>100+ expert lessons</li>
-            <li>All 9 programmes</li>
-            <li>Digital certificates</li>
-            <li>Pathway Passport</li>
-            <li>Full compliance dashboard</li>
-            <li>Care Mentor (unlimited)</li>
-            <li>Manager reporting suite</li>
-            <li>Dedicated account manager</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline btn-block">Contact Sales</a>
-        </div>
+<section class="pc-pricing" id="pricing" aria-labelledby="pc-pricing-title">
+  <div class="pc-inner">
+
+    <div class="pc-head">
+      <div class="pc-eyebrow">Pricing</div>
+      <h2 id="pc-pricing-title">Simple plans that grow with you</h2>
+      <p>Every plan includes Care Passport and Care Score. Pick the size that fits today - upgrade the moment you outgrow it.</p>
+
+      <div class="pc-toggle" role="group" aria-label="Billing period">
+        <button type="button" id="pc-monthly" aria-pressed="true" onclick="pcSetBilling('monthly')">Monthly</button>
+        <button type="button" id="pc-annual"  aria-pressed="false" onclick="pcSetBilling('annual')">Annual <span class="pc-save">2 months free</span></button>
       </div>
     </div>
+
+    <div class="pc-grid">
+
+      <!-- STARTER -->
+      <div class="pc-card">
+        <h3 class="pc-name">Starter</h3>
+        <p class="pc-tag">For small providers just getting started</p>
+        <div class="pc-price">
+          <span class="pc-amt" data-monthly="£49" data-annual="£490">£49</span>
+          <span class="pc-per" data-monthly="/ month" data-annual="/ year">/ month</span>
+        </div>
+        <div class="pc-band">Up to 10 learners</div>
+        <ul>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> 100+ expert lessons &amp; all 9 programmes</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Digital certificates</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> <b>Care Passport</b></li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> <b>Care Score</b></li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Care Mentor <b>(fair-use)</b></li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Basic compliance dashboard</li>
+          <li class="pc-off"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="9" width="12" height="2" rx="1" fill="#B8BFCF"/></svg> Manager reporting suite</li>
+          <li class="pc-off"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="9" width="12" height="2" rx="1" fill="#B8BFCF"/></svg> Dedicated account manager</li>
+        </ul>
+        <a class="pc-cta" href="#contact">Get Started</a>
+      </div>
+
+      <!-- GROWTH (new) -->
+      <div class="pc-card">
+        <span class="pc-badge pc-new">New</span>
+        <h3 class="pc-name">Growth</h3>
+        <p class="pc-tag">For established providers scaling up</p>
+        <div class="pc-price">
+          <span class="pc-amt" data-monthly="£99" data-annual="£990">£99</span>
+          <span class="pc-per" data-monthly="/ month" data-annual="/ year">/ month</span>
+        </div>
+        <div class="pc-band">Up to 25 learners</div>
+        <ul>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> <b>Everything in Starter, plus:</b></li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Care Mentor <b>(unlimited)</b></li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Full compliance dashboard</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Manager reporting suite</li>
+          <li class="pc-off"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="9" width="12" height="2" rx="1" fill="#B8BFCF"/></svg> Dedicated account manager</li>
+        </ul>
+        <a class="pc-cta" href="#contact">Get Started</a>
+      </div>
+
+      <!-- PROFESSIONAL (most popular) -->
+      <div class="pc-card pc-pop">
+        <span class="pc-badge">Most popular</span>
+        <h3 class="pc-name">Professional</h3>
+        <p class="pc-tag">For growing care organisations</p>
+        <div class="pc-price">
+          <span class="pc-amt" data-monthly="£149" data-annual="£1,490">£149</span>
+          <span class="pc-per" data-monthly="/ month" data-annual="/ year">/ month</span>
+        </div>
+        <div class="pc-band">Up to 50 learners</div>
+        <ul>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#C4912B" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> <b>Everything in Growth, plus:</b></li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#C4912B" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Dedicated account manager</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#C4912B" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Priority support</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#C4912B" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Advanced Care Score analytics</li>
+        </ul>
+        <a class="pc-cta pc-solid" href="#contact">Get Started</a>
+      </div>
+
+      <!-- ENTERPRISE (new) -->
+      <div class="pc-card">
+        <span class="pc-badge pc-new">New</span>
+        <h3 class="pc-name">Enterprise</h3>
+        <p class="pc-tag">For large &amp; multi-site groups</p>
+        <div class="pc-price">
+          <span class="pc-amt pc-custom">Custom</span>
+        </div>
+        <div class="pc-band">50+ learners · multi-site</div>
+        <ul>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> <b>Everything in Professional, plus:</b></li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Unlimited learners, multi-site rollout</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Group-wide CQC evidence export</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> SSO, API access &amp; custom branding</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#059669" d="M8 14l-4-4 1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg> Bespoke content &amp; onboarding</li>
+        </ul>
+        <a class="pc-cta" href="#contact">Book a call</a>
+      </div>
+
+    </div>
+
+    <p class="pc-foot">Prices exclude VAT. Annual billing is charged yearly at two months free. Need something in between? <a href="#contact" style="color:var(--pc-gold);font-weight:600;">Talk to us</a>.</p>
+
   </div>
 </section>
+
 
 <!-- ── ABOUT ── -->
 <section class="section" id="about">
@@ -895,7 +997,7 @@
           <h4>Platform</h4>
           <ul>
             <li><a href="#features">AI Avatar Video</a></li>
-            <li><a href="#features">Pathway Passport</a></li>
+            <li><a href="#features">Care Passport</a></li>
             <li><a href="#features">Care Mentor</a></li>
             <li><a href="#features">CQC Compliance Tools</a></li>
             <li><a href="#pricing">Pricing</a></li>
@@ -930,6 +1032,31 @@
   </div>
 </footer>
 
+<script id="pearl-pricing-js">
+  /* ---- ONE-LINE SWITCH ----
+     false = ship MONTHLY-ONLY (annual toggle hidden, this code stays dormant).
+     Flip to true the day your checkout supports annual / yearly plans. */
+  var PC_ANNUAL_ENABLED = false;
+
+  /* Billing toggle: swaps price + period label using data-monthly / data-annual */
+  function pcSetBilling(mode){
+    var isAnnual = mode === 'annual';
+    document.getElementById('pc-monthly').setAttribute('aria-pressed', String(!isAnnual));
+    document.getElementById('pc-annual').setAttribute('aria-pressed', String(isAnnual));
+    document.querySelectorAll('.pc-pricing [data-monthly]').forEach(function(el){
+      var v = isAnnual ? el.getAttribute('data-annual') : el.getAttribute('data-monthly');
+      if (v !== null) el.textContent = v;
+    });
+  }
+
+  /* Apply the switch: hide the toggle and force monthly when annual is off. */
+  (function(){
+    if(!PC_ANNUAL_ENABLED){
+      var t = document.querySelector('.pc-pricing .pc-toggle');
+      if(t) t.style.display = 'none';
+      pcSetBilling('monthly');
+    }
+  })();
+</script>
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

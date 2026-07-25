@@ -348,9 +348,9 @@
     .reg18-note strong{color:var(--navy)}
     /* scroll reveal + count-up (motion-safe) */
     @media (prefers-reduced-motion:no-preference){
-      [data-reveal]{opacity:0;transform:translateY(18px);
+      html.pc-anim [data-reveal]{opacity:0;transform:translateY(18px);
         transition:opacity .7s cubic-bezier(.16,.84,.44,1),transform .7s cubic-bezier(.16,.84,.44,1)}
-      [data-reveal].revealed{opacity:1;transform:none}
+      html.pc-anim [data-reveal].revealed{opacity:1;transform:none}
     }
   </style>
 <style id="pearl-pricing-css">
@@ -1131,12 +1131,21 @@
   });
 
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(reduce) return;
 
   // reveal targets (no markup edits)
-  var sel='.section-header,.prog-card,.feature-card,.stat-item,.compliance-stat-card,.compliance-left,.pricing-card,.about-visual-card,.about-content,.contact-info,.contact-form-card,.reg18-note,.cpd-accreditation';
+  var sel='.section-header,.prog-card,.feature-card,.stat-item,.compliance-stat-card,.compliance-left,.pc-card,.about-visual-card,.about-content,.contact-info,.contact-form-card,.reg18-note,.cpd-accreditation';
   var nodes=[].slice.call(document.querySelectorAll(sel));
   nodes.forEach(function(n,i){ n.setAttribute('data-reveal',''); var d=(i%6)*60; if(d) n.style.transitionDelay=d+'ms'; });
+
+  var canAnimate = !reduce && ('IntersectionObserver' in window);
+  function showAll(){ document.documentElement.classList.remove('pc-anim'); }
+  if(canAnimate){
+    document.documentElement.classList.add('pc-anim');   // only now do elements hide
+    // reveal anything already on-screen at load
+    nodes.forEach(function(n){ var r=n.getBoundingClientRect(); if(r.top < (innerHeight*0.92)) n.classList.add('revealed'); });
+    // hard fail-safe: never leave content hidden
+    setTimeout(showAll, 6000);
+  }
 
   function countUp(el){
     var t=el.getAttribute('data-cu'); if(t==null){t=el.textContent;el.setAttribute('data-cu',t);}
@@ -1151,8 +1160,8 @@
   }
   var stats=[].slice.call(document.querySelectorAll('.stat-number,.compliance-stat-num,.hero-stat-num'));
 
-  if(!('IntersectionObserver' in window)){
-    nodes.forEach(function(n){n.classList.add('revealed');}); stats.forEach(countUp); return;
+  if(!canAnimate){
+    stats.forEach(countUp); return;
   }
   var ro=new IntersectionObserver(function(es){es.forEach(function(en){ if(en.isIntersecting){en.target.classList.add('revealed');ro.unobserve(en.target);} });},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
   nodes.forEach(function(n){ro.observe(n);});

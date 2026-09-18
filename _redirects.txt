@@ -1,0 +1,10 @@
+/programmes/care-certificate            /care-certificate.html            200
+/programmes/care-values-communication   /care-values-communication.html   200
+/programmes/dementia-end-of-life         /dementia-end-of-life.html         200
+/programmes/leadership-cqc-compliance    /leadership-cqc-compliance.html    200
+/programmes/health-and-safety            /health-and-safety.html            200
+/programmes/statutory-compliance         /statutory-compliance.html         200
+/programmes/clinical-care-skills         /clinical-care-skills.html         200
+/programmes/mental-health-wellbeing      /mental-health-wellbeing.html      200
+/programmes/medicines-management         /medicines-management.html         200
+
